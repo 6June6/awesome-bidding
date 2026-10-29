@@ -54,7 +54,7 @@ GITHUB_TOKEN=xxx npm run enrich
 ## PR 评审清单
 
 ```markdown
-- [ ] 符合 [收录标准](docs/criteria.md)（相关、可获取、能用、有人维护）
+- [ ] 符合 [收录标准](criteria.md)（相关、可获取、能用、有人维护）
 - [ ] 描述说清了「是什么 + 解决哪一步」，不是营销词
 - [ ] 分类归属正确（一条只归一个）
 - [ ] `repo` / `homepage` 是项目自己的地址
@@ -89,7 +89,7 @@ git add -A && git commit -m "merge: <项目名> (#123)"
 
 1. 先问：[taxonomy 的决策树](taxonomy.md#判不准时的决策树)走一遍能不能得出结论
 2. 能 → 直接改，回一句为什么
-3. 不能 → 按 [GOVERNANCE](GOVERNANCE.md#争议裁决) 走，**结论要写回 taxonomy.md**，下次就不用再吵
+3. 不能 → 按 [GOVERNANCE](../GOVERNANCE.md#争议裁决) 走，**结论要写回 taxonomy.md**，下次就不用再吵
 
 **分类变更必须同步做这三件事**：改条目 `category` → 跑 `npm run build` → 删除 `docs/list/` 下已废弃的页面。
 

@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        建新分类的门槛是**已经有 8 条以上候选条目**（见 [分类体系](../blob/main/docs/taxonomy.md#新增分类)）。
+        建新分类的门槛是**已经有 8 条以上候选条目**（见 [分类体系](https://github.com/6June6/awesome-bidding/blob/main/docs/taxonomy.md#新增分类)）。
         空分类会让整个列表显得没人维护，所以先讨论再动手。
 
   - type: input

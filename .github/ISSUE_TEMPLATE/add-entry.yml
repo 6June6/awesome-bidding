@@ -12,7 +12,7 @@ body:
         1. 在仓库里搜索一下项目名或仓库地址，避免重复
         2. 用一句话说清「它在招投标/工程的哪一步、替掉了什么手工活」
 
-        没想好怎么写？看看 [已收录条目](../tree/main/data/entries) 的描述风格。
+        没想好怎么写？看看 [已收录条目](https://github.com/6June6/awesome-bidding/tree/main/data/entries) 的描述风格。
 
   - type: input
     id: name
@@ -113,7 +113,7 @@ body:
     attributes:
       label: 确认
       options:
-        - label: 我确认该项目真实存在、可获取，且符合 [收录标准](../blob/main/docs/criteria.md)
+        - label: 我确认该项目真实存在、可获取，且符合 [收录标准](https://github.com/6June6/awesome-bidding/blob/main/docs/criteria.md)
           required: true
         - label: 该项目不含破解、绕过监管、伪造材料等用途
           required: true

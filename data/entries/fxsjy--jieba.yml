@@ -1,0 +1,16 @@
+name: jieba
+category: compliance
+kind: library
+repo: fxsjy/jieba
+homepage: null
+license: MIT
+language: Python
+platform: [linux, macos, windows]
+description: "轻量中文分词，装好即用、支持自定义词典，把「公开招标」「资格预审」这类行业词加进去就够日常文本分析。"
+tags: [中文分词, 轻量]
+use_cases:
+  - 招标公告关键词统计
+  - 术语命中与规则匹配前的切词
+order: 30
+added: 2026-10-29
+added_by: seed

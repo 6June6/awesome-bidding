@@ -1,0 +1,19 @@
+name: IFC 标准（ISO 16739）
+category: learning
+kind: spec
+repo: null
+homepage: https://standards.buildingsmart.org/IFC/
+license: buildingSMART 许可
+language: null
+platform: []
+description: "BIM 数据交换的国际标准，也是算量、模型审查、构件编码所有工作的共同语言；做 BIM 相关开发必须读一遍。"
+tags: [BIM, IFC, 标准]
+use_cases:
+  - 确认构件属性与类型的标准定义
+  - 制定模型交付与审查规则
+featured: true
+order: 10
+added: 2026-10-29
+added_by: seed
+notes: |
+  规范文本可免费下载，但属于标准组织版权作品，不能随意再分发或改写。

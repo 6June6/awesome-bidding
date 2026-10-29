@@ -1,0 +1,68 @@
+name: link-check
+
+# 每周一 03:00 UTC（北京时间 11:00）巡检一次，也可以手动触发。
+# 死链才开 issue；被 WAF 拦的（403/412/521）只记录，不吵人。
+on:
+  schedule:
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: 对齐 GitHub 元数据（失败不阻断）
+        run: npm run enrich
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: 巡检链接
+        id: links
+        run: |
+          set +e
+          npm run link-check
+          if [ $? -ne 0 ]; then
+            echo "dead=1" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 提交巡检结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/metrics.json data/link-status.json
+          if git diff --staged --quiet; then
+            echo "数据无变化。"
+          else
+            git commit -m "chore: 每周元数据与链接巡检"
+            git push
+          fi
+
+      - name: 有死链则开 issue
+        if: steps.links.outputs.dead == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "链接巡检发现失效条目（$(date +%F)）" \
+            --label "bug" \
+            --body "每周巡检发现确认失效（404/410/DNS 不存在）的链接。
+
+          明细见仓库里的 \`data/link-status.json\`（找 \`status: \"dead\"\` 的项），或本地跑 \`npm run link-check\`。
+
+          处理方式按优先级：**找新地址 → 标记 archived: true → 删除条目**。项目搬家很常见，先搜索再删。
+
+          注意：403/412/521 属于政府站 WAF 拦截，**不是死链**，不在本 issue 范围内。"

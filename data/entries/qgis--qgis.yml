@@ -1,0 +1,17 @@
+name: QGIS
+category: geo-space
+kind: app
+repo: qgis/QGIS
+homepage: https://qgis.org/
+license: GPL-2.0
+language: C++ / Python
+platform: [windows, macos, linux]
+description: "桌面 GIS 的事实标准，看地形、算运距、画工地范围、做场平分析都在里面完成，插件可脚本化。"
+tags: [GIS, 地形, 选址]
+use_cases:
+  - 项目选址与周边环境分析
+  - 土方量与运距测算
+featured: true
+order: 10
+added: 2026-10-29
+added_by: seed

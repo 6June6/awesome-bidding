@@ -1,0 +1,17 @@
+name: MinerU
+category: doc-parse
+kind: library
+repo: opendatalab/MinerU
+homepage: https://opendatalab.com/OpenSourceTools/MinerU
+license: AGPL-3.0
+language: Python
+platform: [linux, macos, windows, server]
+description: "把 PDF 转成保留公式、表格与阅读顺序的 Markdown/JSON，扫描件走 OCR 链路，适合喂给大模型做招标文件问答。"
+tags: [PDF, OCR, Markdown, RAG]
+use_cases:
+  - 招标文件转 Markdown 后建知识库
+  - 扫描版图纸说明与规范批量结构化
+featured: true
+order: 40
+added: 2026-10-29
+added_by: seed

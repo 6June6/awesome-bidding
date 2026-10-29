@@ -1,0 +1,16 @@
+name: AntV G6
+category: data-ai
+kind: library
+repo: antvis/G6
+homepage: https://g6.antv.antgroup.com/
+license: MIT
+language: TypeScript
+platform: [web]
+description: "图可视化引擎，适合把「投标人—联系人—地址—中标项目」画成关系网络，围串标线索一眼看得出来。"
+tags: [关系图, 图分析, 可视化]
+use_cases:
+  - 投标人关联关系网络图
+  - 项目与供应商图谱
+order: 50
+added: 2026-10-29
+added_by: seed

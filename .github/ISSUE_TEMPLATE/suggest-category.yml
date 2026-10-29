@@ -1,0 +1,52 @@
+name: 提议新分类
+description: 觉得现有分类装不下某类东西？先在这里讨论
+title: "[分类] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        建新分类的门槛是**已经有 8 条以上候选条目**（见 [分类体系](../blob/main/docs/taxonomy.md#新增分类)）。
+        空分类会让整个列表显得没人维护，所以先讨论再动手。
+
+  - type: input
+    id: name
+    attributes:
+      label: 建议的分类名
+      placeholder: 施工安全与监测
+    validations:
+      required: true
+
+  - type: textarea
+    id: desc
+    attributes:
+      label: 一句话说明这个分类收什么
+      placeholder: 深基坑监测、安全巡检、临边防护计算、危大工程识别。
+    validations:
+      required: true
+
+  - type: textarea
+    id: candidates
+    attributes:
+      label: 候选条目（至少 8 条，写名字就行）
+      description: 这是能否建分类的关键。凑不够 8 条，建议先放进最接近的现有分类，在 notes 里标注。
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么现有分类放不下
+      description: 说明这些条目放进去会造成什么混淆。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: 顺带要做的事
+      options:
+        - 只新增分类，不改已有条目
+        - 需要从某个现有分类迁一批条目过来
+        - 建议把两个现有分类合并
+        - 建议拆分某个过大的分类

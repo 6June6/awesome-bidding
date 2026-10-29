@@ -1,0 +1,18 @@
+name: Dify
+category: data-ai
+kind: service
+repo: langgenius/dify
+homepage: https://dify.ai/
+license: Apache-2.0（附加条款）
+language: TypeScript / Python
+platform: [linux, macos, server, web]
+description: "可视化的大模型应用编排平台，拖拽就能搭出「读招标文件 → 抽资格条件 → 生成响应清单」的工作流。"
+tags: [LLM, 工作流, 低代码]
+use_cases:
+  - 招标文件要点抽取工作流
+  - 标书合规自检助手
+order: 20
+added: 2026-10-29
+added_by: seed
+notes: |
+  Apache-2.0 带附加限制：不得用于对外提供多租户 SaaS，且需保留品牌信息。

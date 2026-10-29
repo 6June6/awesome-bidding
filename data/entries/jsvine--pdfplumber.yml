@@ -1,0 +1,18 @@
+name: pdfplumber
+category: doc-parse
+kind: library
+repo: jsvine/pdfplumber
+homepage: null
+license: MIT
+language: Python
+platform: [linux, macos, windows]
+description: "能拿到每个字符的坐标、字号与表格线，按位置还原版面；评标办法、报价表这类靠排版传意的页面必须用它。"
+tags: [PDF, 表格抽取, 版面分析]
+use_cases:
+  - 按坐标定位并抽取评分表
+  - 还原多栏排版的招标文件段落顺序
+order: 20
+added: 2026-10-29
+added_by: seed
+notes: |
+  纯 Python 实现，速度比 PyMuPDF 慢一个量级，适合精抽而非全量批处理。

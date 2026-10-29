@@ -1,0 +1,16 @@
+name: FreeCAD
+category: bim-cad
+kind: app
+repo: FreeCAD/FreeCAD
+homepage: https://www.freecad.org/
+license: LGPL-2.1
+language: C++ / Python
+platform: [windows, macos, linux]
+description: "参数化三维建模软件，BIM 工作台支持 IFC 导入导出，脚本接口完善，适合做施工方案与临时结构建模。"
+tags: [BIM, CAD, 参数化]
+use_cases:
+  - 施工方案临时结构建模
+  - 用 Python 脚本批量生成构件
+order: 20
+added: 2026-10-29
+added_by: seed

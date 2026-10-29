@@ -1,0 +1,16 @@
+name: Redmine
+category: project-mgmt
+kind: service
+repo: redmine/redmine
+homepage: https://www.redmine.org/
+license: GPL-2.0
+language: Ruby
+platform: [linux, server, web]
+description: "老牌开源项目跟踪系统，问题单、工时、文档与 Wiki 齐全，插件生态大，适合做投标项目的协同台账。"
+tags: [项目跟踪, 工时, 自部署]
+use_cases:
+  - 投标任务分工与进度跟踪
+  - 项目问题与澄清答疑记录
+order: 30
+added: 2026-10-29
+added_by: seed

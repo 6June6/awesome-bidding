@@ -1,0 +1,18 @@
+name: PyMuPDF
+category: doc-parse
+kind: library
+repo: pymupdf/PyMuPDF
+homepage: https://pymupdf.readthedocs.io/
+license: AGPL-3.0
+language: Python
+platform: [linux, macos, windows]
+description: "速度极快的 PDF 解析与渲染库，一次遍历就能拿到文本块、图片、矢量图与页面像素，适合大批量招标文件预处理。"
+tags: [PDF, 渲染, 高性能]
+use_cases:
+  - 上千份招标文件批量抽文本与首页截图
+  - 把 PDF 页转图片交给 OCR 或视觉模型
+order: 30
+added: 2026-10-29
+added_by: seed
+notes: |
+  AGPL-3.0：对外提供网络服务时需一并开源，商业闭源产品要先买商业授权，别踩。

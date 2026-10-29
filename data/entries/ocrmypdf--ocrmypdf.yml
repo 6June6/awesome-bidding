@@ -1,0 +1,16 @@
+name: OCRmyPDF
+category: office-toolkit
+kind: cli
+repo: ocrmypdf/OCRmyPDF
+homepage: https://ocrmypdf.readthedocs.io/
+license: MPL-2.0
+language: Python
+platform: [linux, macos, windows, cli]
+description: "给扫描版 PDF 补一层可搜索的文字，原件外观不变；扫描标书加文字层后就能全文检索与复制。"
+tags: [OCR, PDF, 命令行]
+use_cases:
+  - 扫描标书批量加文字层
+  - 归档件转可检索 PDF
+order: 10
+added: 2026-10-29
+added_by: seed

@@ -1,0 +1,18 @@
+name: Open CASCADE (OCCT)
+category: bim-cad
+kind: library
+repo: Open-Cascade-SAS/OCCT
+homepage: https://dev.opencascade.org/
+license: LGPL-2.1
+language: C++
+platform: [windows, macos, linux]
+description: "工业级三维几何内核，布尔运算、曲面与网格都成熟，多数开源 CAD/BIM 软件的底层都建在它上面。"
+tags: [几何内核, CAD, C++]
+use_cases:
+  - 自研算量或构件识别工具
+  - 图纸几何校验与干涉检查
+order: 50
+added: 2026-10-29
+added_by: seed
+notes: |
+  学习曲线陡，非必要不要自己啃，优先找现成的上层封装。

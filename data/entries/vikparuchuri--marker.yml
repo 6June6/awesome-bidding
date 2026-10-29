@@ -1,0 +1,19 @@
+name: Marker
+category: doc-parse
+kind: library
+repo: VikParuchuri/marker
+homepage: null
+license: Apache-2.0
+language: Python
+platform: [linux, macos, windows]
+description: "高精度的 PDF 转 Markdown 工具，表格与多栏版式还原效果好，适合把招标文件转成可检索、可喂模型的干净文本。"
+tags: [PDF, Markdown, 表格]
+use_cases:
+  - 招标文件高质量转 Markdown
+  - 批量处理含大量表格的报价文件
+order: 60
+added: 2026-10-29
+added_by: seed
+notes: |
+  走深度学习模型，建议有 GPU；纯 CPU 跑大批量文件会很慢。
+  它在 PDF 里嵌好的文字层上直接抽，扫描件仍要靠 OCR 预处理。

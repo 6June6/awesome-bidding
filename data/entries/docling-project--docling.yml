@@ -1,0 +1,16 @@
+name: Docling
+category: doc-parse
+kind: library
+repo: docling-project/docling
+homepage: https://docling-project.github.io/docling/
+license: MIT
+language: Python
+platform: [linux, macos, windows, server]
+description: "IBM 开源的多格式文档解析器，PDF/Word/PPT/图片统一转成结构化 JSON，输出带页码与元素坐标，便于回链原文。"
+tags: [文档解析, 结构化, 多格式]
+use_cases:
+  - 招标文件与投标文件统一解析成同一套结构
+  - 解析结果带页码坐标，做原文溯源引用
+order: 50
+added: 2026-10-29
+added_by: seed

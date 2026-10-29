@@ -1,0 +1,11 @@
+# 谁能批准哪些改动。
+#
+# 条目文件（data/entries/*.yml）故意不设强制评审：谁提谁改、维护者合并即可。
+# 这里只保护「改一处就等于改全站」的地方——分类命名、数据契约、脚本与 CI。
+
+/data/categories.yml  @6June6
+/schema/              @6June6
+/scripts/             @6June6
+/.github/             @6June6
+/package.json         @6June6
+/package-lock.json    @6June6

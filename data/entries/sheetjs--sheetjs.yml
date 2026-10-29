@@ -1,0 +1,18 @@
+name: SheetJS
+category: office-toolkit
+kind: library
+repo: SheetJS/sheetjs
+homepage: https://sheetjs.com/
+license: Apache-2.0
+language: JavaScript
+platform: [windows, macos, linux, web, server]
+description: "跨端电子表格读写库，能把 xlsx 当数据库一样解析和生成，用来对接清单报价表、投标报价汇总表特别省事。"
+tags: [Excel, xlsx, 表格]
+use_cases:
+  - 解析投标人上传的报价 Excel
+  - 服务端生成报价汇总表
+order: 20
+added: 2026-10-29
+added_by: seed
+notes: |
+  社区版在样式写入上有能力缺失，复杂排版需求要评估商业版。

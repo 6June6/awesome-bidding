@@ -1,0 +1,16 @@
+name: docx4j
+category: bid-doc
+kind: library
+repo: plutext/docx4j
+homepage: https://www.docx4java.org/
+license: Apache-2.0
+language: Java
+platform: [linux, macos, windows, server]
+description: "Java 生态里最完整的 Office Open XML 处理库，能直接 docx 转 PDF、做文档合并与域代码替换，适合已有 Java 后台的系统集成。"
+tags: [Word, Java, 转 PDF]
+use_cases:
+  - 服务端把标书 docx 转成 PDF
+  - 合并多个章节文件生成完整投标文件
+order: 30
+added: 2026-10-29
+added_by: seed

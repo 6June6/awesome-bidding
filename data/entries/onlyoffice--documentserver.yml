@@ -1,0 +1,18 @@
+name: ONLYOFFICE DocumentServer
+category: project-mgmt
+kind: service
+repo: ONLYOFFICE/DocumentServer
+homepage: https://www.onlyoffice.com/
+license: AGPL-3.0
+language: C++ / JavaScript
+platform: [linux, server, web]
+description: "可自部署的在线 Office 套件，文档/表格/演示多人协同编辑且与 docx/xlsx 高度兼容，适合内网做标书协同。"
+tags: [在线 Office, 协同编辑, 自部署]
+use_cases:
+  - 内网多人同时编辑同一份技术标
+  - 替换商业在线文档服务
+order: 40
+added: 2026-10-29
+added_by: seed
+notes: |
+  AGPL-3.0，且并发连接数有社区版限制，商用前先看官方授权条款。

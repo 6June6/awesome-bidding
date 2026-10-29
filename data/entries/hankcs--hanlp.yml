@@ -1,0 +1,16 @@
+name: HanLP
+category: compliance
+kind: library
+repo: hankcs/HanLP
+homepage: https://hanlp.hankcs.com/
+license: Apache-2.0
+language: Java / Python
+platform: [linux, macos, windows, server]
+description: "中文分词、词性与依存句法分析工具包，用来从招标文件里抽资格条件、评分项与实质性条款。"
+tags: [中文 NLP, 分词, 信息抽取]
+use_cases:
+  - 从句子里抽「投标人须具备」类资格条件
+  - 识别评分办法中的分值结构
+order: 20
+added: 2026-10-29
+added_by: seed

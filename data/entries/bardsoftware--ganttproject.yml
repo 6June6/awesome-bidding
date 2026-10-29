@@ -1,0 +1,16 @@
+name: GanttProject
+category: project-mgmt
+kind: app
+repo: bardsoftware/ganttproject
+homepage: https://www.ganttproject.biz/
+license: GPL-3.0
+language: Java
+platform: [windows, macos, linux]
+description: "桌面端甘特图工具，能导出 PDF 与 MS Project 格式，轻量、离线可用，做投标文件的进度计划附图表很顺手。"
+tags: [甘特图, 进度计划, 桌面]
+use_cases:
+  - 编制投标用施工进度计划横道图
+  - 导出进度图放进技术标
+order: 20
+added: 2026-10-29
+added_by: seed

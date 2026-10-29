@@ -1,0 +1,18 @@
+name: python-docx
+category: bid-doc
+kind: library
+repo: python-openxml/python-docx
+homepage: https://python-docx.readthedocs.io/
+license: MIT
+language: Python
+platform: [linux, macos, windows, server]
+description: "读写 .docx 的标准库，能改样式、页眉页脚、目录与表格，适合在生成标书后做格式规整与字段替换。"
+tags: [Word, docx, 排版]
+use_cases:
+  - 批量替换标书中的项目名称与日期
+  - 生成后统一调整字体、行距与页码
+order: 20
+added: 2026-10-29
+added_by: seed
+notes: |
+  不支持渲染分页结果，判断「标书是否超页」要靠转换成 PDF 后再看。

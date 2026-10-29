@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/awesome-bidding/schema/entry.schema.json",
+  "title": "条目 / entry",
+  "description": "data/entries/ 下一个文件就是一个条目，文件名（去掉 .yml）即条目 id。本 schema 只负责结构；分类白名单、id 规则、去重、repo/homepage 至少有一个等业务规则在 scripts/validate.mjs 里。",
+  "type": "object",
+  "required": ["name", "category", "kind", "description", "license"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 64,
+      "description": "展示名称。有中文名的写中文名，不要带「官方」「最好用」这类主观修饰。"
+    },
+    "category": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "所属分类 slug，必须在 data/categories.yml 里存在。一条只归一个分类。"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "library",
+        "app",
+        "cli",
+        "service",
+        "plugin",
+        "skill",
+        "dataset",
+        "spec",
+        "resource"
+      ],
+      "description": "library=库/SDK，app=桌面或网页应用，cli=命令行，service=可自部署服务，plugin=插件/扩展，skill=AI Agent 技能，dataset=数据集，spec=标准/规范/协议，resource=资源站/教程/社区"
+    },
+    "repo": {
+      "type": ["string", "null"],
+      "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+      "description": "GitHub 的 owner/repo。非 GitHub 托管（GitLab、Gitee、自建）写 null，把地址放 homepage。"
+    },
+    "homepage": {
+      "type": ["string", "null"],
+      "pattern": "^https?://[^\\s]+$",
+      "description": "官方主页 / 文档站 / 下载页。必须是项目自己的地址，不能是聚合站或转载页。"
+    },
+    "license": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 40,
+      "description": "SPDX 标识（MIT / Apache-2.0 / AGPL-3.0 …）。闭源写 proprietary，看不清写 unknown。不确定就写 unknown，CI 会尝试用 GitHub API 纠正。"
+    },
+    "language": {
+      "type": ["string", "null"],
+      "maxLength": 24,
+      "description": "主要实现语言，如 Python、TypeScript、Java、C++。纯规范/数据集写 null。"
+    },
+    "platform": {
+      "type": "array",
+      "description": "支持的运行平台，可多选。web=浏览器，server=可自部署服务端，cli=终端。",
+      "items": {
+        "type": "string",
+        "enum": ["windows", "macos", "linux", "web", "android", "ios", "server", "cli"]
+      },
+      "uniqueItems": true
+    },
+    "description": {
+      "type": "string",
+      "minLength": 12,
+      "maxLength": 120,
+      "description": "一句话说清「它是什么 + 在招投标/工程场景里解决什么问题」。不要复述项目简介里的营销词。"
+    },
+    "tags": {
+      "type": "array",
+      "description": "检索用关键词，2~6 个。用读者真会去搜的词，中英文混排都可以。",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 20
+      },
+      "maxItems": 8,
+      "uniqueItems": true
+    },
+    "use_cases": {
+      "type": "array",
+      "description": "具体使用场景，帮助读者判断「这东西跟我有没有关系」。每条不超过 40 字。",
+      "items": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 40
+      },
+      "maxItems": 5,
+      "uniqueItems": true
+    },
+    "featured": {
+      "type": "boolean",
+      "description": "是否进入 README 顶部「编辑精选」。由维护者把关，宁缺勿滥。"
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9999,
+      "description": "同分类内的排序权重，越小越靠前，默认 100。只影响展示顺序，不影响收录与否。"
+    },
+    "added": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "收录日期，YYYY-MM-DD。"
+    },
+    "added_by": {
+      "type": "string",
+      "maxLength": 40,
+      "description": "推荐人或提交人，写 GitHub handle（@name）或 seed。"
+    },
+    "archived": {
+      "type": "boolean",
+      "description": "上游已归档或停止维护，但仍具参考价值。列表里会标注，不自动下架。"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 800,
+      "description": "补充说明：坑点、许可证限制、替代方案、实测结论。允许多行。"
+    }
+  }
+}

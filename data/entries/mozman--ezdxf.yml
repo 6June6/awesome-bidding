@@ -1,0 +1,16 @@
+name: ezdxf
+category: bim-cad
+kind: library
+repo: mozman/ezdxf
+homepage: https://ezdxf.mozman.at/
+license: MIT
+language: Python
+platform: [linux, macos, windows]
+description: "纯 Python 的 DXF 读写库，可以批量改图层、统计图块与实体数量，也能在图纸上自动标注。"
+tags: [DXF, CAD, 批处理]
+use_cases:
+  - 统计图纸里各类构件的数量
+  - 批量替换图框与图层规范
+order: 40
+added: 2026-10-29
+added_by: seed

@@ -1,0 +1,20 @@
+name: IfcOpenShell
+category: cost-quantity
+kind: library
+repo: IfcOpenShell/IfcOpenShell
+homepage: https://ifcopenshell.org/
+license: LGPL-3.0
+language: C++ / Python
+platform: [linux, macos, windows]
+description: "IFC 模型的解析与几何计算引擎，内置 ifc5d 算量与构件量提取，是开源 BIM 算量路线绕不开的底座。"
+tags: [BIM, IFC, 算量]
+use_cases:
+  - 从 IFC 模型提构件清单与工程量
+  - 构件级几何与属性数据导出
+featured: true
+order: 10
+added: 2026-10-29
+added_by: seed
+notes: |
+  它同时是通用的 IFC 解析库（bim-cad 分类里的多数工具都依赖它）。
+  算量部分要配合 ifc5d 与自定义计量规则，国内清单规则需自行映射。

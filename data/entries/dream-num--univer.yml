@@ -1,0 +1,16 @@
+name: Univer
+category: office-toolkit
+kind: library
+repo: dream-num/univer
+homepage: https://univer.ai/
+license: Apache-2.0
+language: TypeScript
+platform: [web]
+description: "可嵌入的在线表格与文档引擎，支持公式、协同与导入导出，适合在系统里直接打开并编辑报价表。"
+tags: [在线表格, 协同, 嵌入]
+use_cases:
+  - 系统内嵌在线编辑 xlsx
+  - 多人在线核对工程量清单
+order: 30
+added: 2026-10-29
+added_by: seed

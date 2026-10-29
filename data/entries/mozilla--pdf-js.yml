@@ -1,0 +1,17 @@
+name: PDF.js
+category: doc-parse
+kind: library
+repo: mozilla/pdf.js
+homepage: https://mozilla.github.io/pdf.js/
+license: Apache-2.0
+language: JavaScript
+platform: [web, server]
+description: "浏览器与 Node 端都能跑的 PDF 渲染与文本层抽取引擎，招标文件在线预览与文字检索的事实标准。"
+tags: [PDF, 文本抽取, 在线预览]
+use_cases:
+  - 招标文件在浏览器里翻页预览
+  - 取文字层做全文检索与条款定位
+featured: true
+order: 10
+added: 2026-10-29
+added_by: seed

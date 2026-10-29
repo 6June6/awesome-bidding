@@ -1,0 +1,17 @@
+name: PaddleOCR
+category: doc-parse
+kind: library
+repo: PaddlePaddle/PaddleOCR
+homepage: https://www.paddlepaddle.org.cn/paddle/paddleocr
+license: Apache-2.0
+language: Python
+platform: [linux, macos, windows, server]
+description: "中文场景最成熟的开源 OCR 之一，版面分析加快慢两档识别模型，能啃下扫描件、盖章页与拍照上传的资质证书。"
+tags: [OCR, 中文, 版面分析]
+use_cases:
+  - 识别扫描版招标文件与图纸说明
+  - 提取营业执照、资质证书字段
+featured: true
+order: 80
+added: 2026-10-29
+added_by: seed

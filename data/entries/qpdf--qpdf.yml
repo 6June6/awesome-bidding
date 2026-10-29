@@ -1,0 +1,16 @@
+name: qpdf
+category: office-toolkit
+kind: cli
+repo: qpdf/qpdf
+homepage: https://qpdf.readthedocs.io/
+license: Apache-2.0
+language: C++
+platform: [linux, macos, windows, cli]
+description: "PDF 结构级处理工具，无损合并拆分、旋转页面、加密解密、修复损坏文件，批量整理标书附件很可靠。"
+tags: [PDF, 合并, 加密]
+use_cases:
+  - 把多个章节 PDF 合成完整投标文件
+  - 按大小限制拆分上传文件
+order: 40
+added: 2026-10-29
+added_by: seed

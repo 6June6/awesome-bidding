@@ -1,0 +1,16 @@
+name: LlamaIndex
+category: data-ai
+kind: library
+repo: run-llama/llama_index
+homepage: https://docs.llamaindex.ai/
+license: MIT
+language: Python
+platform: [linux, macos, windows, server]
+description: "面向私有数据的检索增强框架，把招标文件、法规、历史标书建成可查询索引，是自建问答系统的常用起点。"
+tags: [RAG, 索引, 检索]
+use_cases:
+  - 企业历史标书知识库
+  - 法规条款按章检索
+order: 30
+added: 2026-10-29
+added_by: seed

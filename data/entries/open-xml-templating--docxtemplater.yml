@@ -1,0 +1,19 @@
+name: docxtemplater
+category: bid-doc
+kind: library
+repo: open-xml-templating/docxtemplater
+homepage: https://docxtemplater.com/
+license: MIT
+language: JavaScript
+platform: [windows, macos, linux, web, server]
+description: "用占位符把数据灌进 Word 模板，支持循环表格与条件段落，是批量生成投标函、承诺书、资格审查表的主力方案。"
+tags: [Word, 模板, 批量生成]
+use_cases:
+  - 一个项目数据生成整套标书表单
+  - 批量套打投标函与法定代表人证明
+featured: true
+order: 10
+added: 2026-10-29
+added_by: seed
+notes: |
+  核心 MIT，但图片替换、HTML 插入等增强模块是商业授权，选型前看清模块清单。

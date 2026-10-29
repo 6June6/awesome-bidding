@@ -1,0 +1,19 @@
+name: GmSSL
+category: esign-crypto
+kind: library
+repo: guanzhi/GmSSL
+homepage: null
+license: Apache-2.0
+language: C
+platform: [linux, macos, windows]
+description: "支持 SM2/SM3/SM4/SM9 的国密算法库，命令行与开发接口齐全，做投标文件加解密与签名验签绕不开。"
+tags: [国密, SM2, SM4, 加密]
+use_cases:
+  - 生成符合国密要求的密钥对与证书请求
+  - 校验招投标平台返回的签名
+featured: true
+order: 10
+added: 2026-10-29
+added_by: seed
+notes: |
+  各交易平台的证书封装与格式细节不同，先用官方 CA 提供的测试证书跑通再上生产。

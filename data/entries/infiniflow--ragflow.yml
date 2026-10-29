@@ -1,0 +1,17 @@
+name: RAGFlow
+category: data-ai
+kind: service
+repo: infiniflow/ragflow
+homepage: https://ragflow.io/
+license: Apache-2.0
+language: Python
+platform: [linux, server, web]
+description: "带深度文档解析的 RAG 引擎，能直接吃 PDF/Word 做切片与检索，适合搭招标文件与法规库的问答系统。"
+tags: [RAG, 知识库, 文档问答]
+use_cases:
+  - 招标文件条款问答与出处回链
+  - 法规库语义检索
+featured: true
+order: 10
+added: 2026-10-29
+added_by: seed

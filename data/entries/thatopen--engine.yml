@@ -1,0 +1,16 @@
+name: That Open Engine
+category: bim-cad
+kind: library
+repo: ThatOpen/engine_components
+homepage: https://thatopen.com/
+license: MIT
+language: TypeScript
+platform: [web]
+description: "在浏览器里直接加载、剖切与浏览 IFC 模型的前端组件库，不需要装任何桌面软件就能给业主看模型。"
+tags: [BIM, IFC, WebGL]
+use_cases:
+  - 网页端三维查看投标方案模型
+  - 模型构件与清单条目联动高亮
+order: 10
+added: 2026-10-29
+added_by: seed

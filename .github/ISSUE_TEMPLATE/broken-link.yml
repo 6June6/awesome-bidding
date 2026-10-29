@@ -1,0 +1,43 @@
+name: 报告失效链接或错误信息
+description: 条目链接打不开、项目已改名、描述过时、许可写错了
+title: "[问题] "
+labels: ["bug"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: 哪个条目
+      description: 项目名，或 data/entries/ 下的文件名。
+      placeholder: mozilla--pdf-js
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 什么问题
+      options:
+        - 链接打不开（404 / 域名过期）
+        - 链接能打开但内容不对（变成别的项目）
+        - 项目改名或迁移了仓库
+        - 描述不准确或已过时
+        - 许可协议标错了
+        - 项目已归档 / 停止维护
+        - 该项目有安全问题或违规用途
+        - 分类归属不对
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: 补充说明与正确信息
+      description: 有正确地址/信息请直接贴出来，能省一轮来回。
+    validations:
+      required: true
+
+  - type: input
+    id: evidence
+    attributes:
+      label: 你是怎么确认的（选填）
+      description: 比如浏览器打开正常但脚本 403，或官方公告链接。

@@ -1,0 +1,12 @@
+# 统一换行符，Windows 贡献者也不会把整个文件标红
+* text=auto eol=lf
+
+# 生成产物：GitHub 折叠 diff，减少评审噪音
+README.md       linguist-generated=true
+docs/list/*.md  linguist-generated=true
+dist/index.json linguist-generated=true
+data/metrics.json    linguist-generated=true
+data/link-status.json linguist-generated=true
+
+# 数据文件按数据统计，不参与语言占比
+data/**/*.yml  linguist-language=YAML

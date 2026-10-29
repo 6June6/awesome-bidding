@@ -1,0 +1,13 @@
+{
+  "yaml.schemas": {
+    "./schema/entry.schema.json": ["data/entries/*.yml", "data/entries/*.yaml"]
+  },
+  "files.exclude": {
+    "node_modules": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnSave": false
+  },
+  "cSpell.words": ["招投标", "工程量", "围串标"]
+}

@@ -1,0 +1,17 @@
+name: Playwright
+category: announce-data
+kind: library
+repo: microsoft/playwright
+homepage: https://playwright.dev/
+license: Apache-2.0
+language: TypeScript
+platform: [linux, macos, windows, cli]
+description: "跨浏览器自动化驱动，能等页面异步渲染完成再取内容；大量交易中心前端是 Vue/React 渲染，纯 HTTP 请求拿不到公告。"
+tags: [浏览器自动化, 采集, 渲染页]
+use_cases:
+  - 抓取前端异步渲染的公告详情
+  - 自动化走完查询表单再导出结果
+featured: true
+order: 20
+added: 2026-10-29
+added_by: seed

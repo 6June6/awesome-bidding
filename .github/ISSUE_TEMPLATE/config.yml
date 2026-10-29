@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 我只会用，不会写代码，想推荐个工具
+    url: https://github.com/6June6/awesome-bidding/issues/new?template=add-entry.yml
+    about: 用「推荐一个项目」表单，填几栏就行，不需要懂 Git。
+  - name: 安全问题（恶意项目、脚本注入）
+    url: https://github.com/6June6/awesome-bidding/security/advisories/new
+    about: 不要在公开 issue 里写细节，走私密渠道。
+  - name: 想了解收录标准
+    url: https://github.com/6June6/awesome-bidding/blob/main/docs/criteria.md
+    about: 提交前先看一眼，能省一轮来回。

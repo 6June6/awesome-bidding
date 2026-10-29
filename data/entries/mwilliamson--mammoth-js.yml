@@ -1,0 +1,16 @@
+name: Mammoth
+category: bid-doc
+kind: library
+repo: mwilliamson/mammoth.js
+homepage: null
+license: BSD-2-Clause
+language: JavaScript
+platform: [windows, macos, linux, web, server]
+description: "把 .docx 转成语义干净的 HTML，丢掉 Word 那堆杂乱样式，适合做标书在线预览与结构化抽取的前置步骤。"
+tags: [Word, HTML, 转换]
+use_cases:
+  - 投标文件网页预览
+  - 先转 HTML 再提取章节标题层级
+order: 40
+added: 2026-10-29
+added_by: seed

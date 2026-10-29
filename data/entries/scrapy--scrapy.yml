@@ -1,0 +1,20 @@
+name: Scrapy
+category: announce-data
+kind: library
+repo: scrapy/scrapy
+homepage: https://scrapy.org/
+license: BSD-3-Clause
+language: Python
+platform: [linux, macos, windows, cli]
+description: "成熟的 Python 爬虫框架，靠 Spider 与 Item Pipeline 组织采集流程，适合批量抓取招标公告列表页与详情页。"
+tags: [爬虫, 采集, Python]
+use_cases:
+  - 定时抓取省市交易中心公告列表
+  - 把公告正文结构化后入库
+featured: true
+order: 10
+added: 2026-10-29
+added_by: seed
+notes: |
+  交易平台多有反爬与频控，务必配 AutoThrottle 并遵守 robots.txt 与站点条款；
+  只抓公开公告，不要碰需要登录的后台数据。

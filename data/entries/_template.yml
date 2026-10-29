@@ -1,0 +1,27 @@
+# 条目模板
+#
+# 用法：复制成 data/entries/<owner>--<repo>.yml 再填（也可以跑 npm run new 交互式生成）
+#   - 文件名就是条目 id：owner 与 repo 都小写，中间两个连字符，如 mozilla--pdf-js.yml
+#   - 非 GitHub 项目直接用项目 slug，如 ifc-standard.yml
+#   - 填完跑 npm run validate && npm run build，两个都过了再提 PR
+#
+# 字段逐项说明：docs/data-format.md      结构定义：schema/entry.schema.json
+
+name: 项目名
+category: doc-parse
+kind: library
+repo: owner/repo
+homepage: null
+license: MIT
+language: Python
+platform: [linux, macos, windows]
+description: 一句话说清它是什么、在招投标或工程场景里解决什么问题，不要抄项目简介。
+tags: [标签一, 标签二]
+use_cases:
+  - 一个具体的使用场景
+featured: false
+order: 100
+added: 2026-10-29
+added_by: "@your-handle"
+notes: |
+  可选：坑点、许可限制、替代方案、实测结论。

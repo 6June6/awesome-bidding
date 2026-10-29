@@ -1,0 +1,393 @@
+{
+  "updatedAt": "2026-10-29",
+  "source": "api.github.com",
+  "repos": {
+    "antvis/G6": {
+      "stars": 12359,
+      "forks": 1652,
+      "license": "MIT",
+      "archived": false,
+      "language": "TypeScript",
+      "pushedAt": "2026-10-27",
+      "homepage": "https://g6.antv.antgroup.com/"
+    },
+    "apache/echarts": {
+      "stars": 67627,
+      "forks": 19898,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "TypeScript",
+      "pushedAt": "2026-10-13",
+      "homepage": "https://echarts.apache.org"
+    },
+    "apify/crawlee": {
+      "stars": 26285,
+      "forks": 1737,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "TypeScript",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://crawlee.dev"
+    },
+    "bardsoftware/ganttproject": {
+      "stars": 1117,
+      "forks": 347,
+      "license": "GPL-3.0",
+      "archived": false,
+      "language": "Java",
+      "pushedAt": "2026-10-28",
+      "homepage": "http://ganttproject.biz"
+    },
+    "camelot-dev/camelot": {
+      "stars": 3841,
+      "forks": 550,
+      "license": "MIT",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-26",
+      "homepage": "https://camelot-py.readthedocs.io"
+    },
+    "CesiumGS/cesium": {
+      "stars": 15889,
+      "forks": 3892,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "JavaScript",
+      "pushedAt": "2026-10-28",
+      "homepage": "https://cesium.com/cesiumjs/"
+    },
+    "docling-project/docling": {
+      "stars": 69780,
+      "forks": 5210,
+      "license": "MIT",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://docling-project.github.io/docling"
+    },
+    "dream-num/univer": {
+      "stars": 22767,
+      "forks": 1910,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "TypeScript",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://docs.univer.ai"
+    },
+    "ekzhu/datasketch": {
+      "stars": 2977,
+      "forks": 327,
+      "license": "MIT",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-26",
+      "homepage": "https://ekzhu.github.io/datasketch"
+    },
+    "FreeCAD/FreeCAD": {
+      "stars": 34903,
+      "forks": 6302,
+      "license": "LGPL-2.1",
+      "archived": false,
+      "language": "C++",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://www.freecad.org"
+    },
+    "fxsjy/jieba": {
+      "stars": 35223,
+      "forks": 6668,
+      "license": "MIT",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2024-08-21",
+      "homepage": null
+    },
+    "guanzhi/GmSSL": {
+      "stars": 6176,
+      "forks": 1830,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "C",
+      "pushedAt": "2026-06-30",
+      "homepage": "http://gmssl.org"
+    },
+    "hankcs/HanLP": {
+      "stars": 36531,
+      "forks": 10878,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-25",
+      "homepage": "https://hanlp.hankcs.com/"
+    },
+    "IfcOpenShell/IfcOpenShell": {
+      "stars": 2905,
+      "forks": 999,
+      "license": "LGPL-3.0",
+      "archived": false,
+      "language": "C++",
+      "pushedAt": "2026-10-28",
+      "homepage": null
+    },
+    "infiniflow/ragflow": {
+      "stars": 93045,
+      "forks": 11146,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "Go",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://ragflow.io"
+    },
+    "jsvine/pdfplumber": {
+      "stars": 10853,
+      "forks": 940,
+      "license": "MIT",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-15",
+      "homepage": null
+    },
+    "langgenius/dify": {
+      "stars": 159862,
+      "forks": 25254,
+      "license": "NOASSERTION",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://dify.ai"
+    },
+    "LibreCAD/LibreCAD": {
+      "stars": 6523,
+      "forks": 1401,
+      "license": "NOASSERTION",
+      "archived": false,
+      "language": "C++",
+      "pushedAt": "2026-10-29",
+      "homepage": "http://librecad.org/"
+    },
+    "microsoft/playwright": {
+      "stars": 98775,
+      "forks": 6729,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "TypeScript",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://playwright.dev"
+    },
+    "mozilla/pdf.js": {
+      "stars": 54059,
+      "forks": 10725,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "JavaScript",
+      "pushedAt": "2026-10-28",
+      "homepage": "https://mozilla.github.io/pdf.js/"
+    },
+    "mozman/ezdxf": {
+      "stars": 1499,
+      "forks": 299,
+      "license": "MIT",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-27",
+      "homepage": "https://ezdxf.mozman.at"
+    },
+    "ocrmypdf/OCRmyPDF": {
+      "stars": 35180,
+      "forks": 2441,
+      "license": "MPL-2.0",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-25",
+      "homepage": "http://ocrmypdf.readthedocs.io/"
+    },
+    "ONLYOFFICE/DocumentServer": {
+      "stars": 7059,
+      "forks": 1325,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "language": "Shell",
+      "pushedAt": "2026-10-26",
+      "homepage": "https://www.onlyoffice.com/see-it-in-action"
+    },
+    "Open-Cascade-SAS/OCCT": {
+      "stars": 3087,
+      "forks": 730,
+      "license": "LGPL-2.1",
+      "archived": false,
+      "language": "C++",
+      "pushedAt": "2026-10-20",
+      "homepage": "https://occt3d.com"
+    },
+    "open-xml-templating/docxtemplater": {
+      "stars": 3644,
+      "forks": 385,
+      "license": "NOASSERTION",
+      "archived": false,
+      "language": "JavaScript",
+      "pushedAt": "2026-10-15",
+      "homepage": "https://www.docxtemplater.com"
+    },
+    "opendatalab/MinerU": {
+      "stars": 82714,
+      "forks": 6839,
+      "license": "NOASSERTION",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-28",
+      "homepage": "https://opendatalab.github.io/MinerU/"
+    },
+    "openlayers/openlayers": {
+      "stars": 12639,
+      "forks": 3204,
+      "license": "BSD-2-Clause",
+      "archived": false,
+      "language": "JavaScript",
+      "pushedAt": "2026-10-26",
+      "homepage": "https://openlayers.org"
+    },
+    "opf/openproject": {
+      "stars": 16787,
+      "forks": 3638,
+      "license": "GPL-3.0",
+      "archived": false,
+      "language": "Ruby",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://www.openproject.org"
+    },
+    "PaddlePaddle/PaddleOCR": {
+      "stars": 91901,
+      "forks": 11584,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-09-16",
+      "homepage": "https://www.paddleocr.com"
+    },
+    "plutext/docx4j": {
+      "stars": 2387,
+      "forks": 1231,
+      "license": null,
+      "archived": false,
+      "language": "Java",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://www.docx4java.org/"
+    },
+    "pymupdf/PyMuPDF": {
+      "stars": 11013,
+      "forks": 827,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-28",
+      "homepage": "https://pymupdf.readthedocs.io/?utm_source=github&utm_medium=referral&utm_campaign=pymupdf_github&utm_content=about&utm_term=docs"
+    },
+    "python-openxml/python-docx": {
+      "stars": 5752,
+      "forks": 1327,
+      "license": "MIT",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-08-01",
+      "homepage": null
+    },
+    "qgis/QGIS": {
+      "stars": 14735,
+      "forks": 3591,
+      "license": "GPL-2.0",
+      "archived": false,
+      "language": "C++",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://qgis.org"
+    },
+    "qpdf/qpdf": {
+      "stars": 5533,
+      "forks": 411,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "C++",
+      "pushedAt": "2026-09-26",
+      "homepage": "https://qpdf.sourceforge.io/"
+    },
+    "redmine/redmine": {
+      "stars": 6065,
+      "forks": 2474,
+      "license": "NOASSERTION",
+      "archived": false,
+      "language": "Ruby",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://www.redmine.org"
+    },
+    "run-llama/llama_index": {
+      "stars": 52721,
+      "forks": 8457,
+      "license": "MIT",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-26",
+      "homepage": "https://developers.llamaindex.ai"
+    },
+    "scrapy/scrapy": {
+      "stars": 65108,
+      "forks": 12064,
+      "license": "BSD-3-Clause",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-28",
+      "homepage": "https://scrapy.org"
+    },
+    "SheetJS/sheetjs": {
+      "stars": 36346,
+      "forks": 7900,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": null,
+      "pushedAt": "2024-04-18",
+      "homepage": "https://sheetjs.com/"
+    },
+    "shibing624/text2vec": {
+      "stars": 4974,
+      "forks": 428,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-02-14",
+      "homepage": "https://pypi.org/project/text2vec/"
+    },
+    "ThatOpen/engine_components": {
+      "stars": 721,
+      "forks": 214,
+      "license": "MIT",
+      "archived": false,
+      "language": "TypeScript",
+      "pushedAt": "2026-10-22",
+      "homepage": null
+    },
+    "Trisia/ofdrw": {
+      "stars": 1891,
+      "forks": 490,
+      "license": "MIT",
+      "archived": false,
+      "language": "Java",
+      "pushedAt": "2026-10-24",
+      "homepage": "https://github.com/ofdrw/ofdrw"
+    },
+    "VikParuchuri/marker": {
+      "stars": 40686,
+      "forks": 2946,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-22",
+      "homepage": "https://www.datalab.to"
+    },
+    "mwilliamson/mammoth.js": {
+      "stars": 6335,
+      "forks": 674,
+      "license": "BSD-2-Clause",
+      "archived": false,
+      "language": "JavaScript",
+      "pushedAt": "2026-10-16",
+      "homepage": null
+    }
+  }
+}

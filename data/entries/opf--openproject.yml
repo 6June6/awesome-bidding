@@ -1,0 +1,17 @@
+name: OpenProject
+category: project-mgmt
+kind: service
+repo: opf/openproject
+homepage: https://www.openproject.org/
+license: GPL-3.0
+language: Ruby
+platform: [linux, server, web]
+description: "功能最接近商业项目管理套件的开源方案，甘特图、里程碑、预算与工时都在，可自部署在自有服务器上。"
+tags: [项目管理, 甘特图, 自部署]
+use_cases:
+  - 施工进度计划与里程碑跟踪
+  - 项目文档与任务集中管理
+featured: true
+order: 10
+added: 2026-10-29
+added_by: seed

@@ -1,0 +1,16 @@
+name: OSArch 社区
+category: learning
+kind: resource
+repo: null
+homepage: https://osarch.org/
+license: unknown
+language: null
+platform: [web]
+description: "开源建筑与工程（AEC）领域的中立社区，汇集开源工具评测、项目索引与从业者讨论，找「有没有开源替代」先来这里。"
+tags: [社区, 开源 AEC, 选型]
+use_cases:
+  - 查某个商业 BIM 软件有无开源替代
+  - 了解开源 AEC 工具生态全貌
+order: 20
+added: 2026-10-29
+added_by: seed

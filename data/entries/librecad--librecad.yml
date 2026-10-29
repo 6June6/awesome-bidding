@@ -1,0 +1,18 @@
+name: LibreCAD
+category: bim-cad
+kind: app
+repo: LibreCAD/LibreCAD
+homepage: https://librecad.org/
+license: GPL-2.0
+language: C++
+platform: [windows, macos, linux]
+description: "专注二维的开源 CAD，能读写 DXF，界面接近传统 CAD，用来量图、改图与出平面大样足够。"
+tags: [CAD, DXF, 二维]
+use_cases:
+  - 打开招标图纸量尺寸
+  - 补画平面布置与大样图
+order: 30
+added: 2026-10-29
+added_by: seed
+notes: |
+  对 DWG 的支持靠外部转换，复杂图纸建议先转成 DXF 再打开。

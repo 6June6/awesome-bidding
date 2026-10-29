@@ -1,0 +1,18 @@
+name: OFD Reader & Writer
+category: esign-crypto
+kind: library
+repo: Trisia/ofdrw
+homepage: null
+license: MIT
+language: Java
+platform: [linux, macos, windows, server]
+description: "国产版式文档 OFD 的读写与签章库，政府采购与交易平台大量用 OFD 出中标通知书，PDF 库替代不了。"
+tags: [OFD, 签章, 版式文档]
+use_cases:
+  - 解析交易平台下发的 OFD 中标通知书
+  - 在 OFD 上加盖电子印章
+order: 20
+added: 2026-10-29
+added_by: seed
+notes: |
+  OFD 与 PDF 是两套格式，别指望用 PDF 工具打开。

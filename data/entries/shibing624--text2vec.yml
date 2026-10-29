@@ -1,0 +1,16 @@
+name: text2vec
+category: compliance
+kind: library
+repo: shibing624/text2vec
+homepage: null
+license: Apache-2.0
+language: Python
+platform: [linux, macos, windows, server]
+description: "中文文本向量与语义相似度工具箱，把句子编码成向量后算余弦距离，比字面比对更能抓住改写过措辞的雷同段落。"
+tags: [文本向量, 相似度, 中文]
+use_cases:
+  - 语义级投标文件段落比对
+  - 招标文件与法规条款的相似匹配
+order: 40
+added: 2026-10-29
+added_by: seed

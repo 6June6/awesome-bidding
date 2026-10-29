@@ -1,0 +1,16 @@
+name: Crawlee
+category: announce-data
+kind: library
+repo: apify/crawlee
+homepage: https://crawlee.dev/
+license: Apache-2.0
+language: TypeScript
+platform: [linux, macos, windows, server]
+description: "自带请求队列、自动重试、会话与代理轮换的采集框架，适合要长期跑、规模上千个站点或页面的采集任务。"
+tags: [爬虫, 队列, 反爬]
+use_cases:
+  - 多站点公告持续采集并断点续跑
+  - 请求指纹与代理策略统一管理
+order: 30
+added: 2026-10-29
+added_by: seed

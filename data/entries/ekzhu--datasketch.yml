@@ -1,0 +1,20 @@
+name: datasketch
+category: compliance
+kind: library
+repo: ekzhu/datasketch
+homepage: null
+license: MIT
+language: Python
+platform: [linux, macos, windows, server]
+description: "MinHash + LSH 的近似去重库，能把投标文件两两比对从 O(n²) 降到可接受规模，是做雷同检测的基础件。"
+tags: [去重, 相似度, MinHash]
+use_cases:
+  - 上百家投标文件的交叉雷同筛查
+  - 历史标书库查重
+featured: true
+order: 10
+added: 2026-10-29
+added_by: seed
+notes: |
+  只能告诉你「像」，不能判定「串标」。相似度阈值、共同错误、元数据时间线要综合看，
+  结论必须由人复核，不能直接作为处理依据。

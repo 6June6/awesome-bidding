@@ -1,0 +1,1460 @@
+{
+  "generator": "awesome-bidding",
+  "dataUpdatedAt": "2026-10-29",
+  "contentLicense": "CC0-1.0",
+  "total": 45,
+  "categories": [
+    {
+      "slug": "announce-data",
+      "name": "招标公告与交易数据",
+      "en": "Bidding Announcements & Transaction Data",
+      "order": 10,
+      "desc": "公告抓取、结构化解析、开放数据接口、公共资源交易数据治理。",
+      "count": 3
+    },
+    {
+      "slug": "doc-parse",
+      "name": "招标文件解析与文档理解",
+      "en": "Document Parsing",
+      "order": 20,
+      "desc": "PDF / Word / OFD 抽取、扫描件 OCR、表格与条款结构化——让机器「读懂」招标文件的地基。",
+      "count": 8
+    },
+    {
+      "slug": "bid-doc",
+      "name": "标书制作与文档自动化",
+      "en": "Bid Document Automation",
+      "order": 30,
+      "desc": "Word 模板批量生成、排版与目录页码、格式检查、导出 PDF。",
+      "count": 4
+    },
+    {
+      "slug": "cost-quantity",
+      "name": "造价算量与清单计价",
+      "en": "Cost Estimation & Quantity Takeoff",
+      "order": 40,
+      "desc": "工程量计算、清单计价、钢筋翻样、BIM 算量。",
+      "count": 1
+    },
+    {
+      "slug": "bim-cad",
+      "name": "BIM / CAD 与图纸",
+      "en": "BIM, CAD & Drawings",
+      "order": 50,
+      "desc": "IFC 解析与查看、DWG/DXF 处理、几何内核、图纸比对。",
+      "count": 5
+    },
+    {
+      "slug": "compliance",
+      "name": "合规审查与围串标识别",
+      "en": "Compliance & Bid-Rigging Detection",
+      "order": 60,
+      "desc": "投标文件雷同检测、资质核验、合同与条款审查、文本相似度。",
+      "count": 4
+    },
+    {
+      "slug": "esign-crypto",
+      "name": "电子签章与国密",
+      "en": "E-Signature & Cryptography",
+      "order": 70,
+      "desc": "CA 证书、SM2/SM3/SM4 国密算法、OFD 签章、投标文件加密解密。",
+      "count": 2
+    },
+    {
+      "slug": "project-mgmt",
+      "name": "项目管理与协同",
+      "en": "Project Management & Collaboration",
+      "order": 80,
+      "desc": "进度计划与甘特图、施工管理、任务协同、文档协作。",
+      "count": 4
+    },
+    {
+      "slug": "data-ai",
+      "name": "数据、AI 与检索",
+      "en": "Data, AI & Retrieval",
+      "order": 90,
+      "desc": "LLM 应用框架、RAG、中文 NLP、向量检索、工程数据可视化。",
+      "count": 5
+    },
+    {
+      "slug": "geo-space",
+      "name": "GIS 与空间数据",
+      "en": "GIS & Geospatial",
+      "order": 100,
+      "desc": "地图引擎、坐标转换、工地选址、地形与遥感。",
+      "count": 3
+    },
+    {
+      "slug": "office-toolkit",
+      "name": "通用办公与文档工具",
+      "en": "Office & Document Toolkit",
+      "order": 110,
+      "desc": "PDF 处理、OCR、Excel 表格、批量文件操作——投标日常的高频基建。",
+      "count": 4
+    },
+    {
+      "slug": "learning",
+      "name": "标准、数据集与学习资源",
+      "en": "Standards, Datasets & Learning",
+      "order": 120,
+      "desc": "IFC 等标准规范、公开数据集、教程与课程、行业白皮书。",
+      "count": 2
+    }
+  ],
+  "entries": [
+    {
+      "id": "apify--crawlee",
+      "name": "Crawlee",
+      "category": "announce-data",
+      "kind": "library",
+      "repo": "apify/crawlee",
+      "homepage": "https://crawlee.dev/",
+      "url": "https://crawlee.dev/",
+      "license": "Apache-2.0",
+      "language": "TypeScript",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "自带请求队列、自动重试、会话与代理轮换的采集框架，适合要长期跑、规模上千个站点或页面的采集任务。",
+      "tags": [
+        "爬虫",
+        "队列",
+        "反爬"
+      ],
+      "use_cases": [
+        "多站点公告持续采集并断点续跑",
+        "请求指纹与代理策略统一管理"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 26285,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "microsoft--playwright",
+      "name": "Playwright",
+      "category": "announce-data",
+      "kind": "library",
+      "repo": "microsoft/playwright",
+      "homepage": "https://playwright.dev/",
+      "url": "https://playwright.dev/",
+      "license": "Apache-2.0",
+      "language": "TypeScript",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "cli"
+      ],
+      "description": "跨浏览器自动化驱动，能等页面异步渲染完成再取内容；大量交易中心前端是 Vue/React 渲染，纯 HTTP 请求拿不到公告。",
+      "tags": [
+        "浏览器自动化",
+        "采集",
+        "渲染页"
+      ],
+      "use_cases": [
+        "抓取前端异步渲染的公告详情",
+        "自动化走完查询表单再导出结果"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 98775,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "scrapy--scrapy",
+      "name": "Scrapy",
+      "category": "announce-data",
+      "kind": "library",
+      "repo": "scrapy/scrapy",
+      "homepage": "https://scrapy.org/",
+      "url": "https://scrapy.org/",
+      "license": "BSD-3-Clause",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "cli"
+      ],
+      "description": "成熟的 Python 爬虫框架，靠 Spider 与 Item Pipeline 组织采集流程，适合批量抓取招标公告列表页与详情页。",
+      "tags": [
+        "爬虫",
+        "采集",
+        "Python"
+      ],
+      "use_cases": [
+        "定时抓取省市交易中心公告列表",
+        "把公告正文结构化后入库"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 65108,
+      "lastPush": "2026-10-28"
+    },
+    {
+      "id": "plutext--docx4j",
+      "name": "docx4j",
+      "category": "bid-doc",
+      "kind": "library",
+      "repo": "plutext/docx4j",
+      "homepage": "https://www.docx4java.org/",
+      "url": "https://www.docx4java.org/",
+      "license": "Apache-2.0",
+      "language": "Java",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "Java 生态里最完整的 Office Open XML 处理库，能直接 docx 转 PDF、做文档合并与域代码替换，适合已有 Java 后台的系统集成。",
+      "tags": [
+        "Word",
+        "Java",
+        "转 PDF"
+      ],
+      "use_cases": [
+        "服务端把标书 docx 转成 PDF",
+        "合并多个章节文件生成完整投标文件"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 2387,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "open-xml-templating--docxtemplater",
+      "name": "docxtemplater",
+      "category": "bid-doc",
+      "kind": "library",
+      "repo": "open-xml-templating/docxtemplater",
+      "homepage": "https://docxtemplater.com/",
+      "url": "https://docxtemplater.com/",
+      "license": "MIT",
+      "language": "JavaScript",
+      "platform": [
+        "windows",
+        "macos",
+        "linux",
+        "web",
+        "server"
+      ],
+      "description": "用占位符把数据灌进 Word 模板，支持循环表格与条件段落，是批量生成投标函、承诺书、资格审查表的主力方案。",
+      "tags": [
+        "Word",
+        "模板",
+        "批量生成"
+      ],
+      "use_cases": [
+        "一个项目数据生成整套标书表单",
+        "批量套打投标函与法定代表人证明"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 3644,
+      "lastPush": "2026-10-15"
+    },
+    {
+      "id": "mwilliamson--mammoth-js",
+      "name": "Mammoth",
+      "category": "bid-doc",
+      "kind": "library",
+      "repo": "mwilliamson/mammoth.js",
+      "homepage": null,
+      "url": "https://github.com/mwilliamson/mammoth.js",
+      "license": "BSD-2-Clause",
+      "language": "JavaScript",
+      "platform": [
+        "windows",
+        "macos",
+        "linux",
+        "web",
+        "server"
+      ],
+      "description": "把 .docx 转成语义干净的 HTML，丢掉 Word 那堆杂乱样式，适合做标书在线预览与结构化抽取的前置步骤。",
+      "tags": [
+        "Word",
+        "HTML",
+        "转换"
+      ],
+      "use_cases": [
+        "投标文件网页预览",
+        "先转 HTML 再提取章节标题层级"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 6335,
+      "lastPush": "2026-10-16"
+    },
+    {
+      "id": "python-openxml--python-docx",
+      "name": "python-docx",
+      "category": "bid-doc",
+      "kind": "library",
+      "repo": "python-openxml/python-docx",
+      "homepage": "https://python-docx.readthedocs.io/",
+      "url": "https://python-docx.readthedocs.io/",
+      "license": "MIT",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "读写 .docx 的标准库，能改样式、页眉页脚、目录与表格，适合在生成标书后做格式规整与字段替换。",
+      "tags": [
+        "Word",
+        "docx",
+        "排版"
+      ],
+      "use_cases": [
+        "批量替换标书中的项目名称与日期",
+        "生成后统一调整字体、行距与页码"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 5752,
+      "lastPush": "2026-08-01"
+    },
+    {
+      "id": "mozman--ezdxf",
+      "name": "ezdxf",
+      "category": "bim-cad",
+      "kind": "library",
+      "repo": "mozman/ezdxf",
+      "homepage": "https://ezdxf.mozman.at/",
+      "url": "https://ezdxf.mozman.at/",
+      "license": "MIT",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "description": "纯 Python 的 DXF 读写库，可以批量改图层、统计图块与实体数量，也能在图纸上自动标注。",
+      "tags": [
+        "DXF",
+        "CAD",
+        "批处理"
+      ],
+      "use_cases": [
+        "统计图纸里各类构件的数量",
+        "批量替换图框与图层规范"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 1499,
+      "lastPush": "2026-10-27"
+    },
+    {
+      "id": "freecad--freecad",
+      "name": "FreeCAD",
+      "category": "bim-cad",
+      "kind": "app",
+      "repo": "FreeCAD/FreeCAD",
+      "homepage": "https://www.freecad.org/",
+      "url": "https://www.freecad.org/",
+      "license": "LGPL-2.1",
+      "language": "C++ / Python",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "description": "参数化三维建模软件，BIM 工作台支持 IFC 导入导出，脚本接口完善，适合做施工方案与临时结构建模。",
+      "tags": [
+        "BIM",
+        "CAD",
+        "参数化"
+      ],
+      "use_cases": [
+        "施工方案临时结构建模",
+        "用 Python 脚本批量生成构件"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 34903,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "librecad--librecad",
+      "name": "LibreCAD",
+      "category": "bim-cad",
+      "kind": "app",
+      "repo": "LibreCAD/LibreCAD",
+      "homepage": "https://librecad.org/",
+      "url": "https://librecad.org/",
+      "license": "GPL-2.0",
+      "language": "C++",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "description": "专注二维的开源 CAD，能读写 DXF，界面接近传统 CAD，用来量图、改图与出平面大样足够。",
+      "tags": [
+        "CAD",
+        "DXF",
+        "二维"
+      ],
+      "use_cases": [
+        "打开招标图纸量尺寸",
+        "补画平面布置与大样图"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 6523,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "open-cascade-sas--occt",
+      "name": "Open CASCADE (OCCT)",
+      "category": "bim-cad",
+      "kind": "library",
+      "repo": "Open-Cascade-SAS/OCCT",
+      "homepage": "https://dev.opencascade.org/",
+      "url": "https://dev.opencascade.org/",
+      "license": "LGPL-2.1",
+      "language": "C++",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "description": "工业级三维几何内核，布尔运算、曲面与网格都成熟，多数开源 CAD/BIM 软件的底层都建在它上面。",
+      "tags": [
+        "几何内核",
+        "CAD",
+        "C++"
+      ],
+      "use_cases": [
+        "自研算量或构件识别工具",
+        "图纸几何校验与干涉检查"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 3087,
+      "lastPush": "2026-10-20"
+    },
+    {
+      "id": "thatopen--engine",
+      "name": "That Open Engine",
+      "category": "bim-cad",
+      "kind": "library",
+      "repo": "ThatOpen/engine_components",
+      "homepage": "https://thatopen.com/",
+      "url": "https://thatopen.com/",
+      "license": "MIT",
+      "language": "TypeScript",
+      "platform": [
+        "web"
+      ],
+      "description": "在浏览器里直接加载、剖切与浏览 IFC 模型的前端组件库，不需要装任何桌面软件就能给业主看模型。",
+      "tags": [
+        "BIM",
+        "IFC",
+        "WebGL"
+      ],
+      "use_cases": [
+        "网页端三维查看投标方案模型",
+        "模型构件与清单条目联动高亮"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 721,
+      "lastPush": "2026-10-22"
+    },
+    {
+      "id": "ekzhu--datasketch",
+      "name": "datasketch",
+      "category": "compliance",
+      "kind": "library",
+      "repo": "ekzhu/datasketch",
+      "homepage": null,
+      "url": "https://github.com/ekzhu/datasketch",
+      "license": "MIT",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "MinHash + LSH 的近似去重库，能把投标文件两两比对从 O(n²) 降到可接受规模，是做雷同检测的基础件。",
+      "tags": [
+        "去重",
+        "相似度",
+        "MinHash"
+      ],
+      "use_cases": [
+        "上百家投标文件的交叉雷同筛查",
+        "历史标书库查重"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 2977,
+      "lastPush": "2026-10-26"
+    },
+    {
+      "id": "hankcs--hanlp",
+      "name": "HanLP",
+      "category": "compliance",
+      "kind": "library",
+      "repo": "hankcs/HanLP",
+      "homepage": "https://hanlp.hankcs.com/",
+      "url": "https://hanlp.hankcs.com/",
+      "license": "Apache-2.0",
+      "language": "Java / Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "中文分词、词性与依存句法分析工具包，用来从招标文件里抽资格条件、评分项与实质性条款。",
+      "tags": [
+        "中文 NLP",
+        "分词",
+        "信息抽取"
+      ],
+      "use_cases": [
+        "从句子里抽「投标人须具备」类资格条件",
+        "识别评分办法中的分值结构"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 36531,
+      "lastPush": "2026-10-25"
+    },
+    {
+      "id": "fxsjy--jieba",
+      "name": "jieba",
+      "category": "compliance",
+      "kind": "library",
+      "repo": "fxsjy/jieba",
+      "homepage": null,
+      "url": "https://github.com/fxsjy/jieba",
+      "license": "MIT",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "description": "轻量中文分词，装好即用、支持自定义词典，把「公开招标」「资格预审」这类行业词加进去就够日常文本分析。",
+      "tags": [
+        "中文分词",
+        "轻量"
+      ],
+      "use_cases": [
+        "招标公告关键词统计",
+        "术语命中与规则匹配前的切词"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 35223,
+      "lastPush": "2024-08-21"
+    },
+    {
+      "id": "shibing624--text2vec",
+      "name": "text2vec",
+      "category": "compliance",
+      "kind": "library",
+      "repo": "shibing624/text2vec",
+      "homepage": null,
+      "url": "https://github.com/shibing624/text2vec",
+      "license": "Apache-2.0",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "中文文本向量与语义相似度工具箱，把句子编码成向量后算余弦距离，比字面比对更能抓住改写过措辞的雷同段落。",
+      "tags": [
+        "文本向量",
+        "相似度",
+        "中文"
+      ],
+      "use_cases": [
+        "语义级投标文件段落比对",
+        "招标文件与法规条款的相似匹配"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 4974,
+      "lastPush": "2026-02-14"
+    },
+    {
+      "id": "ifcopenshell--ifcopenshell",
+      "name": "IfcOpenShell",
+      "category": "cost-quantity",
+      "kind": "library",
+      "repo": "IfcOpenShell/IfcOpenShell",
+      "homepage": "https://ifcopenshell.org/",
+      "url": "https://ifcopenshell.org/",
+      "license": "LGPL-3.0",
+      "language": "C++ / Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "description": "IFC 模型的解析与几何计算引擎，内置 ifc5d 算量与构件量提取，是开源 BIM 算量路线绕不开的底座。",
+      "tags": [
+        "BIM",
+        "IFC",
+        "算量"
+      ],
+      "use_cases": [
+        "从 IFC 模型提构件清单与工程量",
+        "构件级几何与属性数据导出"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 2905,
+      "lastPush": "2026-10-28"
+    },
+    {
+      "id": "antvis--g6",
+      "name": "AntV G6",
+      "category": "data-ai",
+      "kind": "library",
+      "repo": "antvis/G6",
+      "homepage": "https://g6.antv.antgroup.com/",
+      "url": "https://g6.antv.antgroup.com/",
+      "license": "MIT",
+      "language": "TypeScript",
+      "platform": [
+        "web"
+      ],
+      "description": "图可视化引擎，适合把「投标人—联系人—地址—中标项目」画成关系网络，围串标线索一眼看得出来。",
+      "tags": [
+        "关系图",
+        "图分析",
+        "可视化"
+      ],
+      "use_cases": [
+        "投标人关联关系网络图",
+        "项目与供应商图谱"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 12359,
+      "lastPush": "2026-10-27"
+    },
+    {
+      "id": "apache--echarts",
+      "name": "Apache ECharts",
+      "category": "data-ai",
+      "kind": "library",
+      "repo": "apache/echarts",
+      "homepage": "https://echarts.apache.org/",
+      "url": "https://echarts.apache.org/",
+      "license": "Apache-2.0",
+      "language": "TypeScript",
+      "platform": [
+        "web"
+      ],
+      "description": "成熟的中文友好图表库，把中标金额、区域分布、竞争对手胜率做成看板，一小时能出可用原型。",
+      "tags": [
+        "可视化",
+        "图表",
+        "看板"
+      ],
+      "use_cases": [
+        "中标数据统计看板",
+        "投标竞争格局分析图"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 67627,
+      "lastPush": "2026-10-13"
+    },
+    {
+      "id": "langgenius--dify",
+      "name": "Dify",
+      "category": "data-ai",
+      "kind": "service",
+      "repo": "langgenius/dify",
+      "homepage": "https://dify.ai/",
+      "url": "https://dify.ai/",
+      "license": "Apache-2.0（附加条款）",
+      "language": "TypeScript / Python",
+      "platform": [
+        "linux",
+        "macos",
+        "server",
+        "web"
+      ],
+      "description": "可视化的大模型应用编排平台，拖拽就能搭出「读招标文件 → 抽资格条件 → 生成响应清单」的工作流。",
+      "tags": [
+        "LLM",
+        "工作流",
+        "低代码"
+      ],
+      "use_cases": [
+        "招标文件要点抽取工作流",
+        "标书合规自检助手"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 159862,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "run-llama--llama-index",
+      "name": "LlamaIndex",
+      "category": "data-ai",
+      "kind": "library",
+      "repo": "run-llama/llama_index",
+      "homepage": "https://docs.llamaindex.ai/",
+      "url": "https://docs.llamaindex.ai/",
+      "license": "MIT",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "面向私有数据的检索增强框架，把招标文件、法规、历史标书建成可查询索引，是自建问答系统的常用起点。",
+      "tags": [
+        "RAG",
+        "索引",
+        "检索"
+      ],
+      "use_cases": [
+        "企业历史标书知识库",
+        "法规条款按章检索"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 52721,
+      "lastPush": "2026-10-26"
+    },
+    {
+      "id": "infiniflow--ragflow",
+      "name": "RAGFlow",
+      "category": "data-ai",
+      "kind": "service",
+      "repo": "infiniflow/ragflow",
+      "homepage": "https://ragflow.io/",
+      "url": "https://ragflow.io/",
+      "license": "Apache-2.0",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "server",
+        "web"
+      ],
+      "description": "带深度文档解析的 RAG 引擎，能直接吃 PDF/Word 做切片与检索，适合搭招标文件与法规库的问答系统。",
+      "tags": [
+        "RAG",
+        "知识库",
+        "文档问答"
+      ],
+      "use_cases": [
+        "招标文件条款问答与出处回链",
+        "法规库语义检索"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 93045,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "camelot-dev--camelot",
+      "name": "Camelot",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "camelot-dev/camelot",
+      "homepage": "https://camelot-py.readthedocs.io/",
+      "url": "https://camelot-py.readthedocs.io/",
+      "license": "MIT",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "description": "专攻 PDF 表格抽取，提供线框表与无框表两套策略，输出直接是 DataFrame，工程量清单与报价表首选。",
+      "tags": [
+        "PDF",
+        "表格抽取",
+        "清单"
+      ],
+      "use_cases": [
+        "抽取招标文件里的工程量清单表",
+        "把投标报价表批量转成 Excel"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 3841,
+      "lastPush": "2026-10-26"
+    },
+    {
+      "id": "docling-project--docling",
+      "name": "Docling",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "docling-project/docling",
+      "homepage": "https://docling-project.github.io/docling/",
+      "url": "https://docling-project.github.io/docling/",
+      "license": "MIT",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "IBM 开源的多格式文档解析器，PDF/Word/PPT/图片统一转成结构化 JSON，输出带页码与元素坐标，便于回链原文。",
+      "tags": [
+        "文档解析",
+        "结构化",
+        "多格式"
+      ],
+      "use_cases": [
+        "招标文件与投标文件统一解析成同一套结构",
+        "解析结果带页码坐标，做原文溯源引用"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 69780,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "vikparuchuri--marker",
+      "name": "Marker",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "VikParuchuri/marker",
+      "homepage": null,
+      "url": "https://github.com/VikParuchuri/marker",
+      "license": "Apache-2.0",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "description": "高精度的 PDF 转 Markdown 工具，表格与多栏版式还原效果好，适合把招标文件转成可检索、可喂模型的干净文本。",
+      "tags": [
+        "PDF",
+        "Markdown",
+        "表格"
+      ],
+      "use_cases": [
+        "招标文件高质量转 Markdown",
+        "批量处理含大量表格的报价文件"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 40686,
+      "lastPush": "2026-10-22"
+    },
+    {
+      "id": "opendatalab--mineru",
+      "name": "MinerU",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "opendatalab/MinerU",
+      "homepage": "https://opendatalab.com/OpenSourceTools/MinerU",
+      "url": "https://opendatalab.com/OpenSourceTools/MinerU",
+      "license": "AGPL-3.0",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "把 PDF 转成保留公式、表格与阅读顺序的 Markdown/JSON，扫描件走 OCR 链路，适合喂给大模型做招标文件问答。",
+      "tags": [
+        "PDF",
+        "OCR",
+        "Markdown",
+        "RAG"
+      ],
+      "use_cases": [
+        "招标文件转 Markdown 后建知识库",
+        "扫描版图纸说明与规范批量结构化"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 82714,
+      "lastPush": "2026-10-28"
+    },
+    {
+      "id": "paddlepaddle--paddleocr",
+      "name": "PaddleOCR",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "PaddlePaddle/PaddleOCR",
+      "homepage": "https://www.paddlepaddle.org.cn/paddle/paddleocr",
+      "url": "https://www.paddlepaddle.org.cn/paddle/paddleocr",
+      "license": "Apache-2.0",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "中文场景最成熟的开源 OCR 之一，版面分析加快慢两档识别模型，能啃下扫描件、盖章页与拍照上传的资质证书。",
+      "tags": [
+        "OCR",
+        "中文",
+        "版面分析"
+      ],
+      "use_cases": [
+        "识别扫描版招标文件与图纸说明",
+        "提取营业执照、资质证书字段"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 91901,
+      "lastPush": "2026-09-16"
+    },
+    {
+      "id": "mozilla--pdf-js",
+      "name": "PDF.js",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "mozilla/pdf.js",
+      "homepage": "https://mozilla.github.io/pdf.js/",
+      "url": "https://mozilla.github.io/pdf.js/",
+      "license": "Apache-2.0",
+      "language": "JavaScript",
+      "platform": [
+        "web",
+        "server"
+      ],
+      "description": "浏览器与 Node 端都能跑的 PDF 渲染与文本层抽取引擎，招标文件在线预览与文字检索的事实标准。",
+      "tags": [
+        "PDF",
+        "文本抽取",
+        "在线预览"
+      ],
+      "use_cases": [
+        "招标文件在浏览器里翻页预览",
+        "取文字层做全文检索与条款定位"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 54059,
+      "lastPush": "2026-10-28"
+    },
+    {
+      "id": "jsvine--pdfplumber",
+      "name": "pdfplumber",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "jsvine/pdfplumber",
+      "homepage": null,
+      "url": "https://github.com/jsvine/pdfplumber",
+      "license": "MIT",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "description": "能拿到每个字符的坐标、字号与表格线，按位置还原版面；评标办法、报价表这类靠排版传意的页面必须用它。",
+      "tags": [
+        "PDF",
+        "表格抽取",
+        "版面分析"
+      ],
+      "use_cases": [
+        "按坐标定位并抽取评分表",
+        "还原多栏排版的招标文件段落顺序"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 10853,
+      "lastPush": "2026-10-15"
+    },
+    {
+      "id": "pymupdf--pymupdf",
+      "name": "PyMuPDF",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "pymupdf/PyMuPDF",
+      "homepage": "https://pymupdf.readthedocs.io/",
+      "url": "https://pymupdf.readthedocs.io/",
+      "license": "AGPL-3.0",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "description": "速度极快的 PDF 解析与渲染库，一次遍历就能拿到文本块、图片、矢量图与页面像素，适合大批量招标文件预处理。",
+      "tags": [
+        "PDF",
+        "渲染",
+        "高性能"
+      ],
+      "use_cases": [
+        "上千份招标文件批量抽文本与首页截图",
+        "把 PDF 页转图片交给 OCR 或视觉模型"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 11013,
+      "lastPush": "2026-10-28"
+    },
+    {
+      "id": "guanzhi--gmssl",
+      "name": "GmSSL",
+      "category": "esign-crypto",
+      "kind": "library",
+      "repo": "guanzhi/GmSSL",
+      "homepage": null,
+      "url": "https://github.com/guanzhi/GmSSL",
+      "license": "Apache-2.0",
+      "language": "C",
+      "platform": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "description": "支持 SM2/SM3/SM4/SM9 的国密算法库，命令行与开发接口齐全，做投标文件加解密与签名验签绕不开。",
+      "tags": [
+        "国密",
+        "SM2",
+        "SM4",
+        "加密"
+      ],
+      "use_cases": [
+        "生成符合国密要求的密钥对与证书请求",
+        "校验招投标平台返回的签名"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 6176,
+      "lastPush": "2026-06-30"
+    },
+    {
+      "id": "trisia--ofdrw",
+      "name": "OFD Reader & Writer",
+      "category": "esign-crypto",
+      "kind": "library",
+      "repo": "Trisia/ofdrw",
+      "homepage": null,
+      "url": "https://github.com/Trisia/ofdrw",
+      "license": "MIT",
+      "language": "Java",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "server"
+      ],
+      "description": "国产版式文档 OFD 的读写与签章库，政府采购与交易平台大量用 OFD 出中标通知书，PDF 库替代不了。",
+      "tags": [
+        "OFD",
+        "签章",
+        "版式文档"
+      ],
+      "use_cases": [
+        "解析交易平台下发的 OFD 中标通知书",
+        "在 OFD 上加盖电子印章"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 1891,
+      "lastPush": "2026-10-24"
+    },
+    {
+      "id": "cesiumgs--cesium",
+      "name": "Cesium",
+      "category": "geo-space",
+      "kind": "library",
+      "repo": "CesiumGS/cesium",
+      "homepage": "https://cesium.com/platform/cesiumjs/",
+      "url": "https://cesium.com/platform/cesiumjs/",
+      "license": "Apache-2.0",
+      "language": "JavaScript",
+      "platform": [
+        "web"
+      ],
+      "description": "浏览器里的三维地球引擎，能把 BIM 模型叠到真实地形上，适合做方案汇报与场地三维展示。",
+      "tags": [
+        "三维地球",
+        "3D Tiles",
+        "BIM"
+      ],
+      "use_cases": [
+        "倾斜摄影与地形三维展示",
+        "模型放到真实场地里汇报"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 15889,
+      "lastPush": "2026-10-28"
+    },
+    {
+      "id": "openlayers--openlayers",
+      "name": "OpenLayers",
+      "category": "geo-space",
+      "kind": "library",
+      "repo": "openlayers/openlayers",
+      "homepage": "https://openlayers.org/",
+      "url": "https://openlayers.org/",
+      "license": "BSD-2-Clause",
+      "language": "JavaScript",
+      "platform": [
+        "web"
+      ],
+      "description": "二维地图前端库，能对接各种瓦片与 WMS 服务，做项目分布地图与行政区划钻取足够稳。",
+      "tags": [
+        "地图",
+        "二维",
+        "WebGIS"
+      ],
+      "use_cases": [
+        "中标项目全国分布地图",
+        "按行政区划筛选项目"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 12639,
+      "lastPush": "2026-10-26"
+    },
+    {
+      "id": "qgis--qgis",
+      "name": "QGIS",
+      "category": "geo-space",
+      "kind": "app",
+      "repo": "qgis/QGIS",
+      "homepage": "https://qgis.org/",
+      "url": "https://qgis.org/",
+      "license": "GPL-2.0",
+      "language": "C++ / Python",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "description": "桌面 GIS 的事实标准，看地形、算运距、画工地范围、做场平分析都在里面完成，插件可脚本化。",
+      "tags": [
+        "GIS",
+        "地形",
+        "选址"
+      ],
+      "use_cases": [
+        "项目选址与周边环境分析",
+        "土方量与运距测算"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 14735,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "ifc-standard",
+      "name": "IFC 标准（ISO 16739）",
+      "category": "learning",
+      "kind": "spec",
+      "repo": null,
+      "homepage": "https://standards.buildingsmart.org/IFC/",
+      "url": "https://standards.buildingsmart.org/IFC/",
+      "license": "buildingSMART 许可",
+      "language": null,
+      "platform": [],
+      "description": "BIM 数据交换的国际标准，也是算量、模型审查、构件编码所有工作的共同语言；做 BIM 相关开发必须读一遍。",
+      "tags": [
+        "BIM",
+        "IFC",
+        "标准"
+      ],
+      "use_cases": [
+        "确认构件属性与类型的标准定义",
+        "制定模型交付与审查规则"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": null,
+      "lastPush": null
+    },
+    {
+      "id": "osarch-community",
+      "name": "OSArch 社区",
+      "category": "learning",
+      "kind": "resource",
+      "repo": null,
+      "homepage": "https://osarch.org/",
+      "url": "https://osarch.org/",
+      "license": "unknown",
+      "language": null,
+      "platform": [
+        "web"
+      ],
+      "description": "开源建筑与工程（AEC）领域的中立社区，汇集开源工具评测、项目索引与从业者讨论，找「有没有开源替代」先来这里。",
+      "tags": [
+        "社区",
+        "开源 AEC",
+        "选型"
+      ],
+      "use_cases": [
+        "查某个商业 BIM 软件有无开源替代",
+        "了解开源 AEC 工具生态全貌"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": null,
+      "lastPush": null
+    },
+    {
+      "id": "ocrmypdf--ocrmypdf",
+      "name": "OCRmyPDF",
+      "category": "office-toolkit",
+      "kind": "cli",
+      "repo": "ocrmypdf/OCRmyPDF",
+      "homepage": "https://ocrmypdf.readthedocs.io/",
+      "url": "https://ocrmypdf.readthedocs.io/",
+      "license": "MPL-2.0",
+      "language": "Python",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "cli"
+      ],
+      "description": "给扫描版 PDF 补一层可搜索的文字，原件外观不变；扫描标书加文字层后就能全文检索与复制。",
+      "tags": [
+        "OCR",
+        "PDF",
+        "命令行"
+      ],
+      "use_cases": [
+        "扫描标书批量加文字层",
+        "归档件转可检索 PDF"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 35180,
+      "lastPush": "2026-10-25"
+    },
+    {
+      "id": "qpdf--qpdf",
+      "name": "qpdf",
+      "category": "office-toolkit",
+      "kind": "cli",
+      "repo": "qpdf/qpdf",
+      "homepage": "https://qpdf.readthedocs.io/",
+      "url": "https://qpdf.readthedocs.io/",
+      "license": "Apache-2.0",
+      "language": "C++",
+      "platform": [
+        "linux",
+        "macos",
+        "windows",
+        "cli"
+      ],
+      "description": "PDF 结构级处理工具，无损合并拆分、旋转页面、加密解密、修复损坏文件，批量整理标书附件很可靠。",
+      "tags": [
+        "PDF",
+        "合并",
+        "加密"
+      ],
+      "use_cases": [
+        "把多个章节 PDF 合成完整投标文件",
+        "按大小限制拆分上传文件"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 5533,
+      "lastPush": "2026-09-26"
+    },
+    {
+      "id": "sheetjs--sheetjs",
+      "name": "SheetJS",
+      "category": "office-toolkit",
+      "kind": "library",
+      "repo": "SheetJS/sheetjs",
+      "homepage": "https://sheetjs.com/",
+      "url": "https://sheetjs.com/",
+      "license": "Apache-2.0",
+      "language": "JavaScript",
+      "platform": [
+        "windows",
+        "macos",
+        "linux",
+        "web",
+        "server"
+      ],
+      "description": "跨端电子表格读写库，能把 xlsx 当数据库一样解析和生成，用来对接清单报价表、投标报价汇总表特别省事。",
+      "tags": [
+        "Excel",
+        "xlsx",
+        "表格"
+      ],
+      "use_cases": [
+        "解析投标人上传的报价 Excel",
+        "服务端生成报价汇总表"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 36346,
+      "lastPush": "2024-04-18"
+    },
+    {
+      "id": "dream-num--univer",
+      "name": "Univer",
+      "category": "office-toolkit",
+      "kind": "library",
+      "repo": "dream-num/univer",
+      "homepage": "https://univer.ai/",
+      "url": "https://univer.ai/",
+      "license": "Apache-2.0",
+      "language": "TypeScript",
+      "platform": [
+        "web"
+      ],
+      "description": "可嵌入的在线表格与文档引擎，支持公式、协同与导入导出，适合在系统里直接打开并编辑报价表。",
+      "tags": [
+        "在线表格",
+        "协同",
+        "嵌入"
+      ],
+      "use_cases": [
+        "系统内嵌在线编辑 xlsx",
+        "多人在线核对工程量清单"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 22767,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "bardsoftware--ganttproject",
+      "name": "GanttProject",
+      "category": "project-mgmt",
+      "kind": "app",
+      "repo": "bardsoftware/ganttproject",
+      "homepage": "https://www.ganttproject.biz/",
+      "url": "https://www.ganttproject.biz/",
+      "license": "GPL-3.0",
+      "language": "Java",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "description": "桌面端甘特图工具，能导出 PDF 与 MS Project 格式，轻量、离线可用，做投标文件的进度计划附图表很顺手。",
+      "tags": [
+        "甘特图",
+        "进度计划",
+        "桌面"
+      ],
+      "use_cases": [
+        "编制投标用施工进度计划横道图",
+        "导出进度图放进技术标"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 1117,
+      "lastPush": "2026-10-28"
+    },
+    {
+      "id": "onlyoffice--documentserver",
+      "name": "ONLYOFFICE DocumentServer",
+      "category": "project-mgmt",
+      "kind": "service",
+      "repo": "ONLYOFFICE/DocumentServer",
+      "homepage": "https://www.onlyoffice.com/",
+      "url": "https://www.onlyoffice.com/",
+      "license": "AGPL-3.0",
+      "language": "C++ / JavaScript",
+      "platform": [
+        "linux",
+        "server",
+        "web"
+      ],
+      "description": "可自部署的在线 Office 套件，文档/表格/演示多人协同编辑且与 docx/xlsx 高度兼容，适合内网做标书协同。",
+      "tags": [
+        "在线 Office",
+        "协同编辑",
+        "自部署"
+      ],
+      "use_cases": [
+        "内网多人同时编辑同一份技术标",
+        "替换商业在线文档服务"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 7059,
+      "lastPush": "2026-10-26"
+    },
+    {
+      "id": "opf--openproject",
+      "name": "OpenProject",
+      "category": "project-mgmt",
+      "kind": "service",
+      "repo": "opf/openproject",
+      "homepage": "https://www.openproject.org/",
+      "url": "https://www.openproject.org/",
+      "license": "GPL-3.0",
+      "language": "Ruby",
+      "platform": [
+        "linux",
+        "server",
+        "web"
+      ],
+      "description": "功能最接近商业项目管理套件的开源方案，甘特图、里程碑、预算与工时都在，可自部署在自有服务器上。",
+      "tags": [
+        "项目管理",
+        "甘特图",
+        "自部署"
+      ],
+      "use_cases": [
+        "施工进度计划与里程碑跟踪",
+        "项目文档与任务集中管理"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 16787,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "redmine--redmine",
+      "name": "Redmine",
+      "category": "project-mgmt",
+      "kind": "service",
+      "repo": "redmine/redmine",
+      "homepage": "https://www.redmine.org/",
+      "url": "https://www.redmine.org/",
+      "license": "GPL-2.0",
+      "language": "Ruby",
+      "platform": [
+        "linux",
+        "server",
+        "web"
+      ],
+      "description": "老牌开源项目跟踪系统，问题单、工时、文档与 Wiki 齐全，插件生态大，适合做投标项目的协同台账。",
+      "tags": [
+        "项目跟踪",
+        "工时",
+        "自部署"
+      ],
+      "use_cases": [
+        "投标任务分工与进度跟踪",
+        "项目问题与澄清答疑记录"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 6065,
+      "lastPush": "2026-10-29"
+    }
+  ]
+}

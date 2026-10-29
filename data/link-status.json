@@ -1,0 +1,281 @@
+{
+  "checkedAt": "2026-10-29T06:22:11.610Z",
+  "summary": {
+    "ok": 43,
+    "blocked": 2,
+    "dead": 0,
+    "unknown": 0
+  },
+  "results": {
+    "antvis--g6": {
+      "url": "https://g6.antv.antgroup.com/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "apache--echarts": {
+      "url": "https://echarts.apache.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "apify--crawlee": {
+      "url": "https://crawlee.dev/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "bardsoftware--ganttproject": {
+      "url": "https://www.ganttproject.biz/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "camelot-dev--camelot": {
+      "url": "https://camelot-py.readthedocs.io/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "cesiumgs--cesium": {
+      "url": "https://cesium.com/platform/cesiumjs/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "docling-project--docling": {
+      "url": "https://docling-project.github.io/docling/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "dream-num--univer": {
+      "url": "https://univer.ai/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "ekzhu--datasketch": {
+      "url": "https://github.com/ekzhu/datasketch",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "freecad--freecad": {
+      "url": "https://www.freecad.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "fxsjy--jieba": {
+      "url": "https://github.com/fxsjy/jieba",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "guanzhi--gmssl": {
+      "url": "https://github.com/guanzhi/GmSSL",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "hankcs--hanlp": {
+      "url": "https://hanlp.hankcs.com/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "ifc-standard": {
+      "url": "https://standards.buildingsmart.org/IFC/",
+      "status": "blocked",
+      "httpStatus": 403,
+      "error": null
+    },
+    "ifcopenshell--ifcopenshell": {
+      "url": "https://ifcopenshell.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "infiniflow--ragflow": {
+      "url": "https://ragflow.io/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "jsvine--pdfplumber": {
+      "url": "https://github.com/jsvine/pdfplumber",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "langgenius--dify": {
+      "url": "https://dify.ai/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "librecad--librecad": {
+      "url": "https://librecad.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "microsoft--playwright": {
+      "url": "https://playwright.dev/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "mozilla--pdf-js": {
+      "url": "https://mozilla.github.io/pdf.js/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "mozman--ezdxf": {
+      "url": "https://ezdxf.mozman.at/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "mwilliamson--mammoth-js": {
+      "url": "https://github.com/mwilliamson/mammoth.js",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "ocrmypdf--ocrmypdf": {
+      "url": "https://ocrmypdf.readthedocs.io/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "onlyoffice--documentserver": {
+      "url": "https://www.onlyoffice.com/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "open-cascade-sas--occt": {
+      "url": "https://dev.opencascade.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "open-xml-templating--docxtemplater": {
+      "url": "https://docxtemplater.com/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "opendatalab--mineru": {
+      "url": "https://opendatalab.com/OpenSourceTools/MinerU",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "openlayers--openlayers": {
+      "url": "https://openlayers.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "opf--openproject": {
+      "url": "https://www.openproject.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "osarch-community": {
+      "url": "https://osarch.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "paddlepaddle--paddleocr": {
+      "url": "https://www.paddlepaddle.org.cn/paddle/paddleocr",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "plutext--docx4j": {
+      "url": "https://www.docx4java.org/",
+      "status": "blocked",
+      "httpStatus": 403,
+      "error": null
+    },
+    "pymupdf--pymupdf": {
+      "url": "https://pymupdf.readthedocs.io/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "python-openxml--python-docx": {
+      "url": "https://python-docx.readthedocs.io/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "qgis--qgis": {
+      "url": "https://qgis.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "qpdf--qpdf": {
+      "url": "https://qpdf.readthedocs.io/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "redmine--redmine": {
+      "url": "https://www.redmine.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "run-llama--llama-index": {
+      "url": "https://docs.llamaindex.ai/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "scrapy--scrapy": {
+      "url": "https://scrapy.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "sheetjs--sheetjs": {
+      "url": "https://sheetjs.com/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "shibing624--text2vec": {
+      "url": "https://github.com/shibing624/text2vec",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "thatopen--engine": {
+      "url": "https://thatopen.com/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "trisia--ofdrw": {
+      "url": "https://github.com/Trisia/ofdrw",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "vikparuchuri--marker": {
+      "url": "https://github.com/VikParuchuri/marker",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    }
+  }
+}

@@ -1,0 +1,83 @@
+# 分类定义 —— 全站唯一的分类真值源
+#
+# 改这里的顺序/名称会影响 README、docs/list/*.md 与 dist/index.json，改完跑 npm run build。
+# 新增分类的流程见 docs/taxonomy.md（先提 issue 讨论，避免出现只有一条内容的空分类）。
+#
+# slug    唯一标识，同时决定 docs/list/<slug>.md 的文件名。只允许小写字母、数字、连字符。
+# order   展示顺序，小的在前。
+# needs_help  该分类目前条目偏少，README 会显示「待补充，欢迎提交」。
+
+- slug: announce-data
+  name: 招标公告与交易数据
+  en: Bidding Announcements & Transaction Data
+  order: 10
+  desc: 公告抓取、结构化解析、开放数据接口、公共资源交易数据治理。
+
+- slug: doc-parse
+  name: 招标文件解析与文档理解
+  en: Document Parsing
+  order: 20
+  desc: PDF / Word / OFD 抽取、扫描件 OCR、表格与条款结构化——让机器「读懂」招标文件的地基。
+
+- slug: bid-doc
+  name: 标书制作与文档自动化
+  en: Bid Document Automation
+  order: 30
+  desc: Word 模板批量生成、排版与目录页码、格式检查、导出 PDF。
+
+- slug: cost-quantity
+  name: 造价算量与清单计价
+  en: Cost Estimation & Quantity Takeoff
+  order: 40
+  desc: 工程量计算、清单计价、钢筋翻样、BIM 算量。
+  needs_help: true
+
+- slug: bim-cad
+  name: BIM / CAD 与图纸
+  en: BIM, CAD & Drawings
+  order: 50
+  desc: IFC 解析与查看、DWG/DXF 处理、几何内核、图纸比对。
+
+- slug: compliance
+  name: 合规审查与围串标识别
+  en: Compliance & Bid-Rigging Detection
+  order: 60
+  desc: 投标文件雷同检测、资质核验、合同与条款审查、文本相似度。
+
+- slug: esign-crypto
+  name: 电子签章与国密
+  en: E-Signature & Cryptography
+  order: 70
+  desc: CA 证书、SM2/SM3/SM4 国密算法、OFD 签章、投标文件加密解密。
+  needs_help: true
+
+- slug: project-mgmt
+  name: 项目管理与协同
+  en: Project Management & Collaboration
+  order: 80
+  desc: 进度计划与甘特图、施工管理、任务协同、文档协作。
+
+- slug: data-ai
+  name: 数据、AI 与检索
+  en: Data, AI & Retrieval
+  order: 90
+  desc: LLM 应用框架、RAG、中文 NLP、向量检索、工程数据可视化。
+
+- slug: geo-space
+  name: GIS 与空间数据
+  en: GIS & Geospatial
+  order: 100
+  desc: 地图引擎、坐标转换、工地选址、地形与遥感。
+
+- slug: office-toolkit
+  name: 通用办公与文档工具
+  en: Office & Document Toolkit
+  order: 110
+  desc: PDF 处理、OCR、Excel 表格、批量文件操作——投标日常的高频基建。
+
+- slug: learning
+  name: 标准、数据集与学习资源
+  en: Standards, Datasets & Learning
+  order: 120
+  desc: IFC 等标准规范、公开数据集、教程与课程、行业白皮书。
+  needs_help: true

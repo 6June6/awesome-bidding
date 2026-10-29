@@ -1,0 +1,16 @@
+name: Apache ECharts
+category: data-ai
+kind: library
+repo: apache/echarts
+homepage: https://echarts.apache.org/
+license: Apache-2.0
+language: TypeScript
+platform: [web]
+description: "成熟的中文友好图表库，把中标金额、区域分布、竞争对手胜率做成看板，一小时能出可用原型。"
+tags: [可视化, 图表, 看板]
+use_cases:
+  - 中标数据统计看板
+  - 投标竞争格局分析图
+order: 40
+added: 2026-10-29
+added_by: seed

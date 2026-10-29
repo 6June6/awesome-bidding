@@ -1,0 +1,121 @@
+name: 推荐一个项目
+description: 提交一个值得收录的开源工具、软件、数据集、标准或 AI 技能
+title: "[新增] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢推荐。这个表单填完就是一个可合并的条目，维护者会转成数据文件。
+
+        **填之前请先做两件事：**
+        1. 在仓库里搜索一下项目名或仓库地址，避免重复
+        2. 用一句话说清「它在招投标/工程的哪一步、替掉了什么手工活」
+
+        没想好怎么写？看看 [已收录条目](../tree/main/data/entries) 的描述风格。
+
+  - type: input
+    id: name
+    attributes:
+      label: 项目名称
+      description: 有中文名用中文名。不要加「官方」「最强」这类词。
+      placeholder: pdfplumber
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub 仓库
+      description: 格式 owner/repo。不是 GitHub 托管的请留空，把地址填在下面。
+      placeholder: jsvine/pdfplumber
+
+  - type: input
+    id: homepage
+    attributes:
+      label: 官方主页 / 文档站 / 下载页
+      description: 必须是项目自己的地址，不能是聚合站、网盘、博客转载。
+      placeholder: https://pdfplumber.readthedocs.io/
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 分类
+      description: 一条只归一个。拿不准就选「读者最可能去那里找它」的那个。
+      options:
+        - 招标公告与交易数据
+        - 招标文件解析与文档理解
+        - 标书制作与文档自动化
+        - 造价算量与清单计价
+        - BIM / CAD 与图纸
+        - 合规审查与围串标识别
+        - 电子签章与国密
+        - 项目管理与协同
+        - 数据、AI 与检索
+        - GIS 与空间数据
+        - 通用办公与文档工具
+        - 标准、数据集与学习资源
+        - 拿不准，请维护者判断
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 类型
+      options:
+        - 库 / SDK（要写代码才能用）
+        - 应用（装上就能用的软件）
+        - 命令行工具
+        - 可自部署的服务
+        - 插件 / 浏览器扩展
+        - AI Agent 技能
+        - 数据集 / 模板库
+        - 标准 / 规范
+        - 资源站 / 教程 / 社区
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 一句话描述
+      description: 12~120 字。说清「是什么 + 解决哪一步」，不要写形容词。
+      placeholder: 能拿到每个字符的坐标与表格线，按位置还原版面；评标办法、报价表这类靠排版传意的页面必须用它。
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: 具体使用场景
+      description: 2~5 条，每条一行。这是让别人判断「跟我有没有关系」的关键。
+      placeholder: |
+        按坐标定位并抽取评分表
+        还原多栏排版的招标文件段落顺序
+
+  - type: input
+    id: license
+    attributes:
+      label: 许可协议
+      description: SPDX 标识，如 MIT / Apache-2.0 / AGPL-3.0。不确定写「不确定」。
+      placeholder: MIT
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 有什么坑吗（选填）
+      description: 许可限制、能力边界、替代关系——这类信息最有价值。
+      placeholder: 纯 Python 实现，速度比 PyMuPDF 慢一个量级，适合精抽而非全量批处理。
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我确认该项目真实存在、可获取，且符合 [收录标准](../blob/main/docs/criteria.md)
+          required: true
+        - label: 该项目不含破解、绕过监管、伪造材料等用途
+          required: true
+        - label: 我是该项目的作者或维护者（如有，请说明，避免自我推广误会）
+          required: false

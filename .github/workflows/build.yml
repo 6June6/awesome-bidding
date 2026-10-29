@@ -1,0 +1,47 @@
+name: build
+
+# data/ 变了就自动重新生成产物并提交，避免贡献者忘记跑 npm run build。
+# 只读权限 + 自己提交：不用第三方 action，减少供应链面。
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: 校验后再生成
+        run: npm run validate
+
+      - name: 生成 README / 分类页 / 索引
+        run: npm run build
+
+      - name: 有变化才提交
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md docs/list dist/index.json
+          if git diff --staged --quiet; then
+            echo "产物已是最新，无需提交。"
+          else
+            git commit -m "chore: 重新生成 README 与分类页"
+            git push
+          fi

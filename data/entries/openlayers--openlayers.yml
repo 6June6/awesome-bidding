@@ -1,0 +1,16 @@
+name: OpenLayers
+category: geo-space
+kind: library
+repo: openlayers/openlayers
+homepage: https://openlayers.org/
+license: BSD-2-Clause
+language: JavaScript
+platform: [web]
+description: "二维地图前端库，能对接各种瓦片与 WMS 服务，做项目分布地图与行政区划钻取足够稳。"
+tags: [地图, 二维, WebGIS]
+use_cases:
+  - 中标项目全国分布地图
+  - 按行政区划筛选项目
+order: 30
+added: 2026-10-29
+added_by: seed

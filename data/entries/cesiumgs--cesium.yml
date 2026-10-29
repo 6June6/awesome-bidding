@@ -1,0 +1,16 @@
+name: Cesium
+category: geo-space
+kind: library
+repo: CesiumGS/cesium
+homepage: https://cesium.com/platform/cesiumjs/
+license: Apache-2.0
+language: JavaScript
+platform: [web]
+description: "浏览器里的三维地球引擎，能把 BIM 模型叠到真实地形上，适合做方案汇报与场地三维展示。"
+tags: [三维地球, 3D Tiles, BIM]
+use_cases:
+  - 倾斜摄影与地形三维展示
+  - 模型放到真实场地里汇报
+order: 20
+added: 2026-10-29
+added_by: seed

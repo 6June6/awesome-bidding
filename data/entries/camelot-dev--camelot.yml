@@ -1,0 +1,16 @@
+name: Camelot
+category: doc-parse
+kind: library
+repo: camelot-dev/camelot
+homepage: https://camelot-py.readthedocs.io/
+license: MIT
+language: Python
+platform: [linux, macos, windows]
+description: "专攻 PDF 表格抽取，提供线框表与无框表两套策略，输出直接是 DataFrame，工程量清单与报价表首选。"
+tags: [PDF, 表格抽取, 清单]
+use_cases:
+  - 抽取招标文件里的工程量清单表
+  - 把投标报价表批量转成 Excel
+order: 70
+added: 2026-10-29
+added_by: seed

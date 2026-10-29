@@ -1,0 +1,14 @@
+name: buildingSMART 认证样例数据
+category: learning
+kind: dataset
+repo: buildingSMART/Certification-datasets
+license: NOASSERTION
+platform: [web]
+description: buildingSMART 官方 IFC 认证样例：各版本 schema、各格式的真实模型，测解析器就拿它当基准。
+tags: [IFC, 测试数据, 认证]
+use_cases:
+  - 验证自研 IFC 解析器能否读全各版本
+  - 做 BIM 软件互操作性测试的对照样本
+order: 30
+added: 2026-10-29
+added_by: seed

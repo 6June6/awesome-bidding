@@ -1,0 +1,16 @@
+name: Astral3D
+category: bim-cad
+kind: library
+repo: mlt131220/Astral3D
+homepage: https://3d.astraljs.com
+license: Apache-2.0
+language: JavaScript
+platform: [web]
+description: 基于 Vue3 + Three.js 的国产三维引擎与编辑器，自带 BIM 轻量化、CAD 解析预览，中文文档齐全。
+tags: [三维引擎, BIM 轻量化, Three.js]
+use_cases:
+  - 做施工进度、场地布置的三维展示
+  - 把 IFC 或 CAD 模型轻量化后嵌进业务系统
+order: 80
+added: 2026-10-29
+added_by: seed

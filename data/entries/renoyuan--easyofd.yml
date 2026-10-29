@@ -1,0 +1,15 @@
+name: EasyOFD
+category: doc-parse
+kind: library
+repo: renoyuan/easyofd
+license: Apache-2.0
+language: Python
+platform: [server, cli]
+description: 纯 Python 解析 OFD：ofd 转图片或 PDF，也能把 PDF、图片转成 ofd，适合服务端批量处理。
+tags: [OFD, PDF 转换, 批量处理]
+use_cases:
+  - 把上百份 OFD 投标文件批量转成 PDF 归档
+  - 服务端抽取 OFD 里的文字与签章位置
+order: 100
+added: 2026-10-29
+added_by: seed

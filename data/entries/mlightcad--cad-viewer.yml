@@ -1,0 +1,16 @@
+name: mlightcad CAD Viewer
+category: bim-cad
+kind: library
+repo: mlightcad/cad-viewer
+homepage: https://mlightcad.com/cad-viewer/
+license: MIT
+language: TypeScript
+platform: [web]
+description: 纯浏览器的 DWG/DXF 查看与编辑器，不用后端转换、不用装 AutoCAD 就能打开图纸。
+tags: [DWG, DXF, 在线预览, 图纸]
+use_cases:
+  - 投标答疑时在网页里给评委看图纸
+  - 业务系统里嵌图纸预览，免去转 PDF
+order: 70
+added: 2026-10-29
+added_by: seed

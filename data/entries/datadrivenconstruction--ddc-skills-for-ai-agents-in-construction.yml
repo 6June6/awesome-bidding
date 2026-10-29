@@ -1,0 +1,16 @@
+name: DDC 建筑 AI 技能包
+category: cost-quantity
+kind: skill
+repo: datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction
+homepage: https://datadrivenconstruction.io/
+license: MIT
+language: Python
+platform: [cli]
+description: 221 个建筑行业 AI 技能：BIM 分析、成本估算、进度排期、文档比对，Claude Code 之类可直接加载。
+tags: [AI 技能, 成本估算, BIM, Claude Code]
+use_cases:
+  - 让 AI 助手按当地清单规则做成本估算
+  - 批量比对投标文件与图纸的差异
+order: 30
+added: 2026-10-29
+added_by: seed

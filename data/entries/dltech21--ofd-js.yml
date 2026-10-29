@@ -1,0 +1,15 @@
+name: ofd.js
+category: doc-parse
+kind: library
+repo: DLTech21/ofd.js
+license: Apache-2.0
+language: JavaScript
+platform: [web]
+description: 在浏览器里渲染 OFD 版式文件的 JS 组件，投标文件、电子发票的在线预览用得着。
+tags: [OFD, 版式文件, 在线预览]
+use_cases:
+  - 投标文件的 OFD 格式在网页里直接打开
+  - 给电子发票、中标通知书做个在线阅读器
+order: 90
+added: 2026-10-29
+added_by: seed

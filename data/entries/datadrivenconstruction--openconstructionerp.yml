@@ -1,0 +1,16 @@
+name: OpenConstructionERP
+category: cost-quantity
+kind: service
+repo: datadrivenconstruction/OpenConstructionERP
+homepage: https://openconstructionerp.com
+license: AGPL-3.0
+language: TypeScript
+platform: [server, web]
+description: 开源施工 ERP：BOQ 清单、PDF/CAD/BIM 算量、成本数据匹配，自带 12 万条计价条目。
+tags: [算量, BOQ, 成本估算, ERP]
+use_cases:
+  - 拿 PDF 图纸做工程量提取并对上单价
+  - 自建一套带清单计价的造价工作台
+order: 20
+added: 2026-10-29
+added_by: seed

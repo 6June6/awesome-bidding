@@ -1,0 +1,16 @@
+name: Mini Contract
+category: esign-crypto
+kind: service
+repo: freeleepm/mini-contract
+homepage: https://s.leepm.com
+license: unknown
+language: JavaScript
+platform: [server, web]
+description: 可私有化部署的电子合同平台，一套代码同时对接腾讯电子签、法大大、君子签等多家签章服务。
+tags: [电子合同, 电子签章, 私有化部署]
+use_cases:
+  - 一套接口兼容多家 CA 与签章服务
+  - 合同签署流程私有化部署，数据不出内网
+order: 30
+added: 2026-10-29
+added_by: seed

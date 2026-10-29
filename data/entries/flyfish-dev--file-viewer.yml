@@ -1,0 +1,16 @@
+name: flyfish file-viewer
+category: office-toolkit
+kind: library
+repo: flyfish-dev/file-viewer
+homepage: https://file-viewer.app
+license: Apache-2.0
+language: TypeScript
+platform: [web]
+description: 纯前端预览 275+ 种文件：Office、PDF、OFD、CAD、3D、压缩包，不需要服务端转换。
+tags: [文件预览, OFD, CAD, 前端组件]
+use_cases:
+  - 系统里嵌附件预览，不走后端转码
+  - 投标文件（PDF/OFD/Office）统一在线打开
+order: 50
+added: 2026-10-29
+added_by: seed

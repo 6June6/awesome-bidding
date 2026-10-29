@@ -1,0 +1,15 @@
+name: 开放签
+category: esign-crypto
+kind: app
+repo: kaifangqian/kaifangqian-base
+license: AGPL-3.0
+language: Vue
+platform: [web]
+description: 开源电子签章前端：手写签名面板、印章生成、按关键字定位签署位置，能直接搭自己的签章系统。
+tags: [电子签章, 手写签名, 印章]
+use_cases:
+  - 给投标文件加骑缝章与签署位
+  - 自建电子合同签署页，替代第三方 SaaS
+order: 5
+added: 2026-10-29
+added_by: seed

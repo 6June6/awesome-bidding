@@ -32,7 +32,7 @@
 ## 目录
 
 <!-- BEGIN GENERATED: stats -->
-**45** 个条目 · **12** 个分类 · **6** 种类型 · **11** 种语言
+**60** 个条目 · **12** 个分类 · **8** 种类型 · **12** 种语言
 
 <sub>本页表格由 `npm run build` 从 `data/entries/` 生成，请勿手改。数据快照 2026-10-29。</sub>
 <!-- END GENERATED: stats -->
@@ -41,17 +41,17 @@
 | 分类 | 条目 | 覆盖内容 |
 | --- | --- | --- |
 | [招标公告与交易数据](#招标公告与交易数据) | 3 | 公告抓取、结构化解析、开放数据接口、公共资源交易数据治理。 |
-| [招标文件解析与文档理解](#招标文件解析与文档理解) | 8 | PDF / Word / OFD 抽取、扫描件 OCR、表格与条款结构化——让机器「读懂」招标文件的地基。 |
-| [标书制作与文档自动化](#标书制作与文档自动化) | 4 | Word 模板批量生成、排版与目录页码、格式检查、导出 PDF。 |
-| [造价算量与清单计价](#造价算量与清单计价) | 1 | 工程量计算、清单计价、钢筋翻样、BIM 算量。 |
-| [BIM / CAD 与图纸](#bim--cad-与图纸) | 5 | IFC 解析与查看、DWG/DXF 处理、几何内核、图纸比对。 |
-| [合规审查与围串标识别](#合规审查与围串标识别) | 4 | 投标文件雷同检测、资质核验、合同与条款审查、文本相似度。 |
-| [电子签章与国密](#电子签章与国密) | 2 | CA 证书、SM2/SM3/SM4 国密算法、OFD 签章、投标文件加密解密。 |
+| [招标文件解析与文档理解](#招标文件解析与文档理解) | 11 | PDF / Word / OFD 抽取、扫描件 OCR、表格与条款结构化——让机器「读懂」招标文件的地基。 |
+| [标书制作与文档自动化](#标书制作与文档自动化) | 5 | Word 模板批量生成、排版与目录页码、格式检查、导出 PDF。 |
+| [造价算量与清单计价](#造价算量与清单计价) | 3 | 工程量计算、清单计价、钢筋翻样、BIM 算量。 |
+| [BIM / CAD 与图纸](#bim--cad-与图纸) | 8 | IFC 解析与查看、DWG/DXF 处理、几何内核、图纸比对。 |
+| [合规审查与围串标识别](#合规审查与围串标识别) | 5 | 投标文件雷同检测、资质核验、合同与条款审查、文本相似度。 |
+| [电子签章与国密](#电子签章与国密) | 4 | CA 证书、SM2/SM3/SM4 国密算法、OFD 签章、投标文件加密解密。 |
 | [项目管理与协同](#项目管理与协同) | 4 | 进度计划与甘特图、施工管理、任务协同、文档协作。 |
-| [数据、AI 与检索](#数据ai-与检索) | 5 | LLM 应用框架、RAG、中文 NLP、向量检索、工程数据可视化。 |
+| [数据、AI 与检索](#数据ai-与检索) | 6 | LLM 应用框架、RAG、中文 NLP、向量检索、工程数据可视化。 |
 | [GIS 与空间数据](#gis-与空间数据) | 3 | 地图引擎、坐标转换、工地选址、地形与遥感。 |
-| [通用办公与文档工具](#通用办公与文档工具) | 4 | PDF 处理、OCR、Excel 表格、批量文件操作——投标日常的高频基建。 |
-| [标准、数据集与学习资源](#标准数据集与学习资源) | 2 | IFC 等标准规范、公开数据集、教程与课程、行业白皮书。 |
+| [通用办公与文档工具](#通用办公与文档工具) | 5 | PDF 处理、OCR、Excel 表格、批量文件操作——投标日常的高频基建。 |
+| [标准、数据集与学习资源](#标准数据集与学习资源) | 3 | IFC 等标准规范、公开数据集、教程与课程、行业白皮书。 |
 <!-- END GENERATED: catalog -->
 
 ---
@@ -87,8 +87,11 @@
 | [Docling](https://docling-project.github.io/docling/) | IBM 开源的多格式文档解析器，PDF/Word/PPT/图片统一转成结构化 JSON，输出带页码与元素坐标，便于回链原文。 | 库 · Python · MIT · ★ 69.8k |
 | [Marker](https://github.com/VikParuchuri/marker) | 高精度的 PDF 转 Markdown 工具，表格与多栏版式还原效果好，适合把招标文件转成可检索、可喂模型的干净文本。 | 库 · Python · Apache-2.0 · ★ 40.7k |
 | [Camelot](https://camelot-py.readthedocs.io/) | 专攻 PDF 表格抽取，提供线框表与无框表两套策略，输出直接是 DataFrame，工程量清单与报价表首选。 | 库 · Python · MIT · ★ 3.8k |
+| [ofd.js](https://github.com/DLTech21/ofd.js) | 在浏览器里渲染 OFD 版式文件的 JS 组件，投标文件、电子发票的在线预览用得着。 | 库 · JavaScript · Apache-2.0 · ★ 344 |
+| [EasyOFD](https://github.com/renoyuan/easyofd) | 纯 Python 解析 OFD：ofd 转图片或 PDF，也能把 PDF、图片转成 ofd，适合服务端批量处理。 | 库 · Python · Apache-2.0 · ★ 439 |
+| [img2table](https://github.com/xavctn/img2table) | 走图像识别的表格抽取库，没有线框的扫描表格也能识别，正好补 Camelot 只吃有线框表的空白。 | 库 · Python · MIT · ★ 901 |
 
-<sub>共 8 个 · [分类详情](docs/list/doc-parse.md)</sub>
+<sub>共 11 个 · [分类详情](docs/list/doc-parse.md)</sub>
 
 ### 标书制作与文档自动化
 
@@ -96,12 +99,13 @@
 
 | 项目 | 说明 | 信息 |
 | --- | --- | --- |
+| [OpenBidKit 易标](https://yibiao.pro) | 开箱即用的 AI 写标书工具：素材知识库、逐章生成、标书查重与废标项检查，桌面端和网页都能跑。 | 应用 · JavaScript · AGPL-3.0 · ★ 3.2k |
 | [docxtemplater](https://docxtemplater.com/) | 用占位符把数据灌进 Word 模板，支持循环表格与条件段落，是批量生成投标函、承诺书、资格审查表的主力方案。 | 库 · JavaScript · MIT · ★ 3.6k |
 | [python-docx](https://python-docx.readthedocs.io/) | 读写 .docx 的标准库，能改样式、页眉页脚、目录与表格，适合在生成标书后做格式规整与字段替换。 | 库 · Python · MIT · ★ 5.8k |
 | [docx4j](https://www.docx4java.org/) | Java 生态里最完整的 Office Open XML 处理库，能直接 docx 转 PDF、做文档合并与域代码替换，适合已有 Java 后台的系统集成。 | 库 · Java · Apache-2.0 · ★ 2.4k |
 | [Mammoth](https://github.com/mwilliamson/mammoth.js) | 把 .docx 转成语义干净的 HTML，丢掉 Word 那堆杂乱样式，适合做标书在线预览与结构化抽取的前置步骤。 | 库 · JavaScript · BSD-2-Clause · ★ 6.3k |
 
-<sub>共 4 个 · [分类详情](docs/list/bid-doc.md)</sub>
+<sub>共 5 个 · [分类详情](docs/list/bid-doc.md)</sub>
 
 ### 造价算量与清单计价
 
@@ -110,8 +114,10 @@
 | 项目 | 说明 | 信息 |
 | --- | --- | --- |
 | [IfcOpenShell](https://ifcopenshell.org/) | IFC 模型的解析与几何计算引擎，内置 ifc5d 算量与构件量提取，是开源 BIM 算量路线绕不开的底座。 | 库 · C++ / Python · LGPL-3.0 · ★ 2.9k |
+| [OpenConstructionERP](https://openconstructionerp.com) | 开源施工 ERP：BOQ 清单、PDF/CAD/BIM 算量、成本数据匹配，自带 12 万条计价条目。 | 服务 · TypeScript · AGPL-3.0 · ★ 1.1k |
+| [DDC 建筑 AI 技能包](https://datadrivenconstruction.io/) | 221 个建筑行业 AI 技能：BIM 分析、成本估算、进度排期、文档比对，Claude Code 之类可直接加载。 | 技能 · Python · MIT · ★ 375 |
 
-<sub>共 1 个 · [分类详情](docs/list/cost-quantity.md)</sub>
+<sub>共 3 个 · [分类详情](docs/list/cost-quantity.md)</sub>
 
 ### BIM / CAD 与图纸
 
@@ -124,8 +130,11 @@
 | [LibreCAD](https://librecad.org/) | 专注二维的开源 CAD，能读写 DXF，界面接近传统 CAD，用来量图、改图与出平面大样足够。 | 应用 · C++ · GPL-2.0 · ★ 6.5k |
 | [ezdxf](https://ezdxf.mozman.at/) | 纯 Python 的 DXF 读写库，可以批量改图层、统计图块与实体数量，也能在图纸上自动标注。 | 库 · Python · MIT · ★ 1.5k |
 | [Open CASCADE (OCCT)](https://dev.opencascade.org/) | 工业级三维几何内核，布尔运算、曲面与网格都成熟，多数开源 CAD/BIM 软件的底层都建在它上面。 | 库 · C++ · LGPL-2.1 · ★ 3.1k |
+| [web-ifc](https://thatopen.github.io/engine_web-ifc/demo) | 用 JavaScript 读写 IFC 的底层内核，速度接近原生；已收录的 That Open Engine 加载 IFC 就靠它。 | 库 · TypeScript · MPL-2.0 · ★ 1.1k |
+| [mlightcad CAD Viewer](https://mlightcad.com/cad-viewer/) | 纯浏览器的 DWG/DXF 查看与编辑器，不用后端转换、不用装 AutoCAD 就能打开图纸。 | 库 · TypeScript · MIT · ★ 1.2k |
+| [Astral3D](https://3d.astraljs.com) | 基于 Vue3 + Three.js 的国产三维引擎与编辑器，自带 BIM 轻量化、CAD 解析预览，中文文档齐全。 | 库 · JavaScript · Apache-2.0 · ★ 2.5k |
 
-<sub>共 5 个 · [分类详情](docs/list/bim-cad.md)</sub>
+<sub>共 8 个 · [分类详情](docs/list/bim-cad.md)</sub>
 
 ### 合规审查与围串标识别
 
@@ -137,8 +146,9 @@
 | [HanLP](https://hanlp.hankcs.com/) | 中文分词、词性与依存句法分析工具包，用来从招标文件里抽资格条件、评分项与实质性条款。 | 库 · Java / Python · Apache-2.0 · ★ 36.5k |
 | [jieba](https://github.com/fxsjy/jieba) | 轻量中文分词，装好即用、支持自定义词典，把「公开招标」「资格预审」这类行业词加进去就够日常文本分析。 | 库 · Python · MIT · ★ 35.2k |
 | [text2vec](https://github.com/shibing624/text2vec) | 中文文本向量与语义相似度工具箱，把句子编码成向量后算余弦距离，比字面比对更能抓住改写过措辞的雷同段落。 | 库 · Python · Apache-2.0 · ★ 5.0k |
+| [Claude Legal Skill](https://github.com/evolsb/claude-legal-skill) | 合同审查 AI 技能：按 CUAD 风险点清单逐条比对，产出带批注的修改稿，可接 Claude Code 等工具。 | 技能 · MIT · ★ 487 |
 
-<sub>共 4 个 · [分类详情](docs/list/compliance.md)</sub>
+<sub>共 5 个 · [分类详情](docs/list/compliance.md)</sub>
 
 ### 电子签章与国密
 
@@ -147,9 +157,11 @@
 | 项目 | 说明 | 信息 |
 | --- | --- | --- |
 | [GmSSL](https://github.com/guanzhi/GmSSL) | 支持 SM2/SM3/SM4/SM9 的国密算法库，命令行与开发接口齐全，做投标文件加解密与签名验签绕不开。 | 库 · C · Apache-2.0 · ★ 6.2k |
+| [开放签](https://github.com/kaifangqian/kaifangqian-base) | 开源电子签章前端：手写签名面板、印章生成、按关键字定位签署位置，能直接搭自己的签章系统。 | 应用 · Vue · AGPL-3.0 · ★ 523 |
 | [OFD Reader & Writer](https://github.com/Trisia/ofdrw) | 国产版式文档 OFD 的读写与签章库，政府采购与交易平台大量用 OFD 出中标通知书，PDF 库替代不了。 | 库 · Java · MIT · ★ 1.9k |
+| [Mini Contract](https://s.leepm.com) | 可私有化部署的电子合同平台，一套代码同时对接腾讯电子签、法大大、君子签等多家签章服务。 | 服务 · JavaScript · unknown · ★ 325 |
 
-<sub>共 2 个 · [分类详情](docs/list/esign-crypto.md)</sub>
+<sub>共 4 个 · [分类详情](docs/list/esign-crypto.md)</sub>
 
 ### 项目管理与协同
 
@@ -175,8 +187,9 @@
 | [LlamaIndex](https://docs.llamaindex.ai/) | 面向私有数据的检索增强框架，把招标文件、法规、历史标书建成可查询索引，是自建问答系统的常用起点。 | 库 · Python · MIT · ★ 52.7k |
 | [Apache ECharts](https://echarts.apache.org/) | 成熟的中文友好图表库，把中标金额、区域分布、竞争对手胜率做成看板，一小时能出可用原型。 | 库 · TypeScript · Apache-2.0 · ★ 67.6k |
 | [AntV G6](https://g6.antv.antgroup.com/) | 图可视化引擎，适合把「投标人—联系人—地址—中标项目」画成关系网络，围串标线索一眼看得出来。 | 库 · TypeScript · MIT · ★ 12.4k |
+| [funNLP](https://zhuanlan.zhihu.com/yangyangfuture) | 中文 NLP 资源总索引：词表、敏感词库、实体抽取工具、相似度算法与语料，做中文文本处理先翻这里。 | 资源 · Python · unknown · ★ 84.2k |
 
-<sub>共 5 个 · [分类详情](docs/list/data-ai.md)</sub>
+<sub>共 6 个 · [分类详情](docs/list/data-ai.md)</sub>
 
 ### GIS 与空间数据
 
@@ -200,8 +213,9 @@
 | [SheetJS](https://sheetjs.com/) | 跨端电子表格读写库，能把 xlsx 当数据库一样解析和生成，用来对接清单报价表、投标报价汇总表特别省事。 | 库 · JavaScript · Apache-2.0 · ★ 36.3k |
 | [Univer](https://univer.ai/) | 可嵌入的在线表格与文档引擎，支持公式、协同与导入导出，适合在系统里直接打开并编辑报价表。 | 库 · TypeScript · Apache-2.0 · ★ 22.8k |
 | [qpdf](https://qpdf.readthedocs.io/) | PDF 结构级处理工具，无损合并拆分、旋转页面、加密解密、修复损坏文件，批量整理标书附件很可靠。 | 命令行 · C++ · Apache-2.0 · ★ 5.5k |
+| [flyfish file-viewer](https://file-viewer.app) | 纯前端预览 275+ 种文件：Office、PDF、OFD、CAD、3D、压缩包，不需要服务端转换。 | 库 · TypeScript · Apache-2.0 · ★ 2.7k |
 
-<sub>共 4 个 · [分类详情](docs/list/office-toolkit.md)</sub>
+<sub>共 5 个 · [分类详情](docs/list/office-toolkit.md)</sub>
 
 ### 标准、数据集与学习资源
 
@@ -211,8 +225,9 @@
 | --- | --- | --- |
 | [IFC 标准（ISO 16739）](https://standards.buildingsmart.org/IFC/) | BIM 数据交换的国际标准，也是算量、模型审查、构件编码所有工作的共同语言；做 BIM 相关开发必须读一遍。 | 规范 · buildingSMART 许可 |
 | [OSArch 社区](https://osarch.org/) | 开源建筑与工程（AEC）领域的中立社区，汇集开源工具评测、项目索引与从业者讨论，找「有没有开源替代」先来这里。 | 资源 · unknown |
+| [buildingSMART 认证样例数据](https://github.com/buildingSMART/Certification-datasets) | buildingSMART 官方 IFC 认证样例：各版本 schema、各格式的真实模型，测解析器就拿它当基准。 | 数据集 · NOASSERTION · ★ 363 |
 
-<sub>共 2 个 · [分类详情](docs/list/learning.md)</sub>
+<sub>共 3 个 · [分类详情](docs/list/learning.md)</sub>
 <!-- END GENERATED: lists -->
 
 ---

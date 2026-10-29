@@ -1,0 +1,15 @@
+name: funNLP
+category: data-ai
+kind: resource
+repo: fighting41love/funNLP
+homepage: https://zhuanlan.zhihu.com/yangyangfuture
+license: unknown
+language: Python
+description: 中文 NLP 资源总索引：词表、敏感词库、实体抽取工具、相似度算法与语料，做中文文本处理先翻这里。
+tags: [中文 NLP, 词库, 语料, 资源索引]
+use_cases:
+  - 找公司名、人名、地址识别的现成词表
+  - 挑一个句子相似度算法做标书查重
+order: 60
+added: 2026-10-29
+added_by: seed

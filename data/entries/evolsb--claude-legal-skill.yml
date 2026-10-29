@@ -1,0 +1,15 @@
+name: Claude Legal Skill
+category: compliance
+kind: skill
+repo: evolsb/claude-legal-skill
+license: MIT
+platform: [cli]
+description: 合同审查 AI 技能：按 CUAD 风险点清单逐条比对，产出带批注的修改稿，可接 Claude Code 等工具。
+tags: [合同审查, 法律 AI, 风险条款]
+use_cases:
+  - 快速出一版合同风险点清单与修改建议
+  - 把招标文件里的合同条款对照市场基准
+notes: 基于英美法系的 CUAD 数据集，国内条款要把风险清单与法规依据换成本地版本再跑。
+order: 50
+added: 2026-10-29
+added_by: seed

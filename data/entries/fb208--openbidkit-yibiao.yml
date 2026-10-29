@@ -1,0 +1,18 @@
+name: OpenBidKit 易标
+category: bid-doc
+kind: app
+repo: FB208/OpenBidKit_Yibiao
+homepage: https://yibiao.pro
+license: AGPL-3.0
+language: JavaScript
+platform: [web, windows]
+description: 开箱即用的 AI 写标书工具：素材知识库、逐章生成、标书查重与废标项检查，桌面端和网页都能跑。
+tags: [AI 写标书, 标书查重, 废标检查, 知识库]
+use_cases:
+  - 从招标文件提取评分点，逐章生成技术标初稿
+  - 把历史标书沉淀成素材库，避免每次重写
+  - 提交前跑一遍废标项检查与雷同检查
+featured: true
+order: 5
+added: 2026-10-29
+added_by: seed

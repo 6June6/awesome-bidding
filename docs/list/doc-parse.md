@@ -2,7 +2,7 @@
 
 > PDF / Word / OFD 抽取、扫描件 OCR、表格与条款结构化——让机器「读懂」招标文件的地基。
 
-共 **8** 个条目。英文名：Document Parsing。
+共 **11** 个条目。英文名：Document Parsing。
 
 | 项目 | 说明 | 信息 |
 | --- | --- | --- |
@@ -14,6 +14,9 @@
 | [Docling](https://docling-project.github.io/docling/) | IBM 开源的多格式文档解析器，PDF/Word/PPT/图片统一转成结构化 JSON，输出带页码与元素坐标，便于回链原文。<br><sub>场景：招标文件与投标文件统一解析成同一套结构；解析结果带页码坐标，做原文溯源引用</sub> | 库 · Python · MIT · ★ 69.8k |
 | [Marker](https://github.com/VikParuchuri/marker) | 高精度的 PDF 转 Markdown 工具，表格与多栏版式还原效果好，适合把招标文件转成可检索、可喂模型的干净文本。<br><sub>场景：招标文件高质量转 Markdown；批量处理含大量表格的报价文件</sub> | 库 · Python · Apache-2.0 · ★ 40.7k |
 | [Camelot](https://camelot-py.readthedocs.io/) | 专攻 PDF 表格抽取，提供线框表与无框表两套策略，输出直接是 DataFrame，工程量清单与报价表首选。<br><sub>场景：抽取招标文件里的工程量清单表；把投标报价表批量转成 Excel</sub> | 库 · Python · MIT · ★ 3.8k |
+| [ofd.js](https://github.com/DLTech21/ofd.js) | 在浏览器里渲染 OFD 版式文件的 JS 组件，投标文件、电子发票的在线预览用得着。<br><sub>场景：投标文件的 OFD 格式在网页里直接打开；给电子发票、中标通知书做个在线阅读器</sub> | 库 · JavaScript · Apache-2.0 · ★ 344 |
+| [EasyOFD](https://github.com/renoyuan/easyofd) | 纯 Python 解析 OFD：ofd 转图片或 PDF，也能把 PDF、图片转成 ofd，适合服务端批量处理。<br><sub>场景：把上百份 OFD 投标文件批量转成 PDF 归档；服务端抽取 OFD 里的文字与签章位置</sub> | 库 · Python · Apache-2.0 · ★ 439 |
+| [img2table](https://github.com/xavctn/img2table) | 走图像识别的表格抽取库，没有线框的扫描表格也能识别，正好补 Camelot 只吃有线框表的空白。<br><sub>场景：从扫描版评分表里抠出表格数据；处理没有边框的工程量清单截图</sub> | 库 · Python · MIT · ★ 901 |
 
 ---
 

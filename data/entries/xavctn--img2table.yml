@@ -1,0 +1,15 @@
+name: img2table
+category: doc-parse
+kind: library
+repo: xavctn/img2table
+license: MIT
+language: Python
+platform: [server]
+description: 走图像识别的表格抽取库，没有线框的扫描表格也能识别，正好补 Camelot 只吃有线框表的空白。
+tags: [表格抽取, 扫描件, 工程量清单]
+use_cases:
+  - 从扫描版评分表里抠出表格数据
+  - 处理没有边框的工程量清单截图
+order: 110
+added: 2026-10-29
+added_by: seed

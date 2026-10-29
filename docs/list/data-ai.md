@@ -2,7 +2,7 @@
 
 > LLM 应用框架、RAG、中文 NLP、向量检索、工程数据可视化。
 
-共 **5** 个条目。英文名：Data, AI & Retrieval。
+共 **6** 个条目。英文名：Data, AI & Retrieval。
 
 | 项目 | 说明 | 信息 |
 | --- | --- | --- |
@@ -11,6 +11,7 @@
 | [LlamaIndex](https://docs.llamaindex.ai/) | 面向私有数据的检索增强框架，把招标文件、法规、历史标书建成可查询索引，是自建问答系统的常用起点。<br><sub>场景：企业历史标书知识库；法规条款按章检索</sub> | 库 · Python · MIT · ★ 52.7k |
 | [Apache ECharts](https://echarts.apache.org/) | 成熟的中文友好图表库，把中标金额、区域分布、竞争对手胜率做成看板，一小时能出可用原型。<br><sub>场景：中标数据统计看板；投标竞争格局分析图</sub> | 库 · TypeScript · Apache-2.0 · ★ 67.6k |
 | [AntV G6](https://g6.antv.antgroup.com/) | 图可视化引擎，适合把「投标人—联系人—地址—中标项目」画成关系网络，围串标线索一眼看得出来。<br><sub>场景：投标人关联关系网络图；项目与供应商图谱</sub> | 库 · TypeScript · MIT · ★ 12.4k |
+| [funNLP](https://zhuanlan.zhihu.com/yangyangfuture) | 中文 NLP 资源总索引：词表、敏感词库、实体抽取工具、相似度算法与语料，做中文文本处理先翻这里。<br><sub>场景：找公司名、人名、地址识别的现成词表；挑一个句子相似度算法做标书查重</sub> | 资源 · Python · unknown · ★ 84.2k |
 
 ---
 

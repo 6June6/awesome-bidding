@@ -2,7 +2,7 @@
   "generator": "awesome-bidding",
   "dataUpdatedAt": "2026-10-29",
   "contentLicense": "CC0-1.0",
-  "total": 45,
+  "total": 60,
   "categories": [
     {
       "slug": "announce-data",
@@ -18,7 +18,7 @@
       "en": "Document Parsing",
       "order": 20,
       "desc": "PDF / Word / OFD 抽取、扫描件 OCR、表格与条款结构化——让机器「读懂」招标文件的地基。",
-      "count": 8
+      "count": 11
     },
     {
       "slug": "bid-doc",
@@ -26,7 +26,7 @@
       "en": "Bid Document Automation",
       "order": 30,
       "desc": "Word 模板批量生成、排版与目录页码、格式检查、导出 PDF。",
-      "count": 4
+      "count": 5
     },
     {
       "slug": "cost-quantity",
@@ -34,7 +34,7 @@
       "en": "Cost Estimation & Quantity Takeoff",
       "order": 40,
       "desc": "工程量计算、清单计价、钢筋翻样、BIM 算量。",
-      "count": 1
+      "count": 3
     },
     {
       "slug": "bim-cad",
@@ -42,7 +42,7 @@
       "en": "BIM, CAD & Drawings",
       "order": 50,
       "desc": "IFC 解析与查看、DWG/DXF 处理、几何内核、图纸比对。",
-      "count": 5
+      "count": 8
     },
     {
       "slug": "compliance",
@@ -50,7 +50,7 @@
       "en": "Compliance & Bid-Rigging Detection",
       "order": 60,
       "desc": "投标文件雷同检测、资质核验、合同与条款审查、文本相似度。",
-      "count": 4
+      "count": 5
     },
     {
       "slug": "esign-crypto",
@@ -58,7 +58,7 @@
       "en": "E-Signature & Cryptography",
       "order": 70,
       "desc": "CA 证书、SM2/SM3/SM4 国密算法、OFD 签章、投标文件加密解密。",
-      "count": 2
+      "count": 4
     },
     {
       "slug": "project-mgmt",
@@ -74,7 +74,7 @@
       "en": "Data, AI & Retrieval",
       "order": 90,
       "desc": "LLM 应用框架、RAG、中文 NLP、向量检索、工程数据可视化。",
-      "count": 5
+      "count": 6
     },
     {
       "slug": "geo-space",
@@ -90,7 +90,7 @@
       "en": "Office & Document Toolkit",
       "order": 110,
       "desc": "PDF 处理、OCR、Excel 表格、批量文件操作——投标日常的高频基建。",
-      "count": 4
+      "count": 5
     },
     {
       "slug": "learning",
@@ -98,7 +98,7 @@
       "en": "Standards, Datasets & Learning",
       "order": 120,
       "desc": "IFC 等标准规范、公开数据集、教程与课程、行业白皮书。",
-      "count": 2
+      "count": 3
     }
   ],
   "entries": [
@@ -291,6 +291,37 @@
       "lastPush": "2026-10-16"
     },
     {
+      "id": "fb208--openbidkit-yibiao",
+      "name": "OpenBidKit 易标",
+      "category": "bid-doc",
+      "kind": "app",
+      "repo": "FB208/OpenBidKit_Yibiao",
+      "homepage": "https://yibiao.pro",
+      "url": "https://yibiao.pro",
+      "license": "AGPL-3.0",
+      "language": "JavaScript",
+      "platform": [
+        "web",
+        "windows"
+      ],
+      "description": "开箱即用的 AI 写标书工具：素材知识库、逐章生成、标书查重与废标项检查，桌面端和网页都能跑。",
+      "tags": [
+        "AI 写标书",
+        "标书查重",
+        "废标检查",
+        "知识库"
+      ],
+      "use_cases": [
+        "从招标文件提取评分点，逐章生成技术标初稿",
+        "把历史标书沉淀成素材库，避免每次重写",
+        "提交前跑一遍废标项检查与雷同检查"
+      ],
+      "archived": false,
+      "featured": true,
+      "stars": 3239,
+      "lastPush": "2026-10-29"
+    },
+    {
       "id": "python-openxml--python-docx",
       "name": "python-docx",
       "category": "bid-doc",
@@ -320,6 +351,34 @@
       "featured": false,
       "stars": 5752,
       "lastPush": "2026-08-01"
+    },
+    {
+      "id": "mlt131220--astral3d",
+      "name": "Astral3D",
+      "category": "bim-cad",
+      "kind": "library",
+      "repo": "mlt131220/Astral3D",
+      "homepage": "https://3d.astraljs.com",
+      "url": "https://3d.astraljs.com",
+      "license": "Apache-2.0",
+      "language": "JavaScript",
+      "platform": [
+        "web"
+      ],
+      "description": "基于 Vue3 + Three.js 的国产三维引擎与编辑器，自带 BIM 轻量化、CAD 解析预览，中文文档齐全。",
+      "tags": [
+        "三维引擎",
+        "BIM 轻量化",
+        "Three.js"
+      ],
+      "use_cases": [
+        "做施工进度、场地布置的三维展示",
+        "把 IFC 或 CAD 模型轻量化后嵌进业务系统"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 2504,
+      "lastPush": "2026-10-26"
     },
     {
       "id": "mozman--ezdxf",
@@ -412,6 +471,35 @@
       "lastPush": "2026-10-29"
     },
     {
+      "id": "mlightcad--cad-viewer",
+      "name": "mlightcad CAD Viewer",
+      "category": "bim-cad",
+      "kind": "library",
+      "repo": "mlightcad/cad-viewer",
+      "homepage": "https://mlightcad.com/cad-viewer/",
+      "url": "https://mlightcad.com/cad-viewer/",
+      "license": "MIT",
+      "language": "TypeScript",
+      "platform": [
+        "web"
+      ],
+      "description": "纯浏览器的 DWG/DXF 查看与编辑器，不用后端转换、不用装 AutoCAD 就能打开图纸。",
+      "tags": [
+        "DWG",
+        "DXF",
+        "在线预览",
+        "图纸"
+      ],
+      "use_cases": [
+        "投标答疑时在网页里给评委看图纸",
+        "业务系统里嵌图纸预览，免去转 PDF"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 1212,
+      "lastPush": "2026-10-28"
+    },
+    {
       "id": "open-cascade-sas--occt",
       "name": "Open CASCADE (OCCT)",
       "category": "bim-cad",
@@ -468,6 +556,63 @@
       "featured": false,
       "stars": 721,
       "lastPush": "2026-10-22"
+    },
+    {
+      "id": "thatopen--engine-web-ifc",
+      "name": "web-ifc",
+      "category": "bim-cad",
+      "kind": "library",
+      "repo": "ThatOpen/engine_web-ifc",
+      "homepage": "https://thatopen.github.io/engine_web-ifc/demo",
+      "url": "https://thatopen.github.io/engine_web-ifc/demo",
+      "license": "MPL-2.0",
+      "language": "TypeScript",
+      "platform": [
+        "web",
+        "server"
+      ],
+      "description": "用 JavaScript 读写 IFC 的底层内核，速度接近原生；已收录的 That Open Engine 加载 IFC 就靠它。",
+      "tags": [
+        "IFC",
+        "BIM",
+        "WebAssembly"
+      ],
+      "use_cases": [
+        "网页里加载 IFC 模型并读取构件属性",
+        "服务端批量解析 IFC 生成工程量数据"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 1079,
+      "lastPush": "2026-10-29"
+    },
+    {
+      "id": "evolsb--claude-legal-skill",
+      "name": "Claude Legal Skill",
+      "category": "compliance",
+      "kind": "skill",
+      "repo": "evolsb/claude-legal-skill",
+      "homepage": null,
+      "url": "https://github.com/evolsb/claude-legal-skill",
+      "license": "MIT",
+      "language": null,
+      "platform": [
+        "cli"
+      ],
+      "description": "合同审查 AI 技能：按 CUAD 风险点清单逐条比对，产出带批注的修改稿，可接 Claude Code 等工具。",
+      "tags": [
+        "合同审查",
+        "法律 AI",
+        "风险条款"
+      ],
+      "use_cases": [
+        "快速出一版合同风险点清单与修改建议",
+        "把招标文件里的合同条款对照市场基准"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 487,
+      "lastPush": "2026-07-23"
     },
     {
       "id": "ekzhu--datasketch",
@@ -592,6 +737,35 @@
       "lastPush": "2026-02-14"
     },
     {
+      "id": "datadrivenconstruction--ddc-skills-for-ai-agents-in-construction",
+      "name": "DDC 建筑 AI 技能包",
+      "category": "cost-quantity",
+      "kind": "skill",
+      "repo": "datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction",
+      "homepage": "https://datadrivenconstruction.io/",
+      "url": "https://datadrivenconstruction.io/",
+      "license": "MIT",
+      "language": "Python",
+      "platform": [
+        "cli"
+      ],
+      "description": "221 个建筑行业 AI 技能：BIM 分析、成本估算、进度排期、文档比对，Claude Code 之类可直接加载。",
+      "tags": [
+        "AI 技能",
+        "成本估算",
+        "BIM",
+        "Claude Code"
+      ],
+      "use_cases": [
+        "让 AI 助手按当地清单规则做成本估算",
+        "批量比对投标文件与图纸的差异"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 375,
+      "lastPush": "2026-10-19"
+    },
+    {
       "id": "ifcopenshell--ifcopenshell",
       "name": "IfcOpenShell",
       "category": "cost-quantity",
@@ -620,6 +794,36 @@
       "featured": true,
       "stars": 2905,
       "lastPush": "2026-10-28"
+    },
+    {
+      "id": "datadrivenconstruction--openconstructionerp",
+      "name": "OpenConstructionERP",
+      "category": "cost-quantity",
+      "kind": "service",
+      "repo": "datadrivenconstruction/OpenConstructionERP",
+      "homepage": "https://openconstructionerp.com",
+      "url": "https://openconstructionerp.com",
+      "license": "AGPL-3.0",
+      "language": "TypeScript",
+      "platform": [
+        "server",
+        "web"
+      ],
+      "description": "开源施工 ERP：BOQ 清单、PDF/CAD/BIM 算量、成本数据匹配，自带 12 万条计价条目。",
+      "tags": [
+        "算量",
+        "BOQ",
+        "成本估算",
+        "ERP"
+      ],
+      "use_cases": [
+        "拿 PDF 图纸做工程量提取并对上单价",
+        "自建一套带清单计价的造价工作台"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 1066,
+      "lastPush": "2026-10-29"
     },
     {
       "id": "antvis--g6",
@@ -707,6 +911,33 @@
       "featured": false,
       "stars": 159862,
       "lastPush": "2026-10-29"
+    },
+    {
+      "id": "fighting41love--funnlp",
+      "name": "funNLP",
+      "category": "data-ai",
+      "kind": "resource",
+      "repo": "fighting41love/funNLP",
+      "homepage": "https://zhuanlan.zhihu.com/yangyangfuture",
+      "url": "https://zhuanlan.zhihu.com/yangyangfuture",
+      "license": "unknown",
+      "language": "Python",
+      "platform": [],
+      "description": "中文 NLP 资源总索引：词表、敏感词库、实体抽取工具、相似度算法与语料，做中文文本处理先翻这里。",
+      "tags": [
+        "中文 NLP",
+        "词库",
+        "语料",
+        "资源索引"
+      ],
+      "use_cases": [
+        "找公司名、人名、地址识别的现成词表",
+        "挑一个句子相似度算法做标书查重"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 84240,
+      "lastPush": "2024-05-10"
     },
     {
       "id": "run-llama--llama-index",
@@ -831,6 +1062,63 @@
       "lastPush": "2026-10-29"
     },
     {
+      "id": "renoyuan--easyofd",
+      "name": "EasyOFD",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "renoyuan/easyofd",
+      "homepage": null,
+      "url": "https://github.com/renoyuan/easyofd",
+      "license": "Apache-2.0",
+      "language": "Python",
+      "platform": [
+        "server",
+        "cli"
+      ],
+      "description": "纯 Python 解析 OFD：ofd 转图片或 PDF，也能把 PDF、图片转成 ofd，适合服务端批量处理。",
+      "tags": [
+        "OFD",
+        "PDF 转换",
+        "批量处理"
+      ],
+      "use_cases": [
+        "把上百份 OFD 投标文件批量转成 PDF 归档",
+        "服务端抽取 OFD 里的文字与签章位置"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 439,
+      "lastPush": "2026-06-11"
+    },
+    {
+      "id": "xavctn--img2table",
+      "name": "img2table",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "xavctn/img2table",
+      "homepage": null,
+      "url": "https://github.com/xavctn/img2table",
+      "license": "MIT",
+      "language": "Python",
+      "platform": [
+        "server"
+      ],
+      "description": "走图像识别的表格抽取库，没有线框的扫描表格也能识别，正好补 Camelot 只吃有线框表的空白。",
+      "tags": [
+        "表格抽取",
+        "扫描件",
+        "工程量清单"
+      ],
+      "use_cases": [
+        "从扫描版评分表里抠出表格数据",
+        "处理没有边框的工程量清单截图"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 901,
+      "lastPush": "2026-07-12"
+    },
+    {
       "id": "vikparuchuri--marker",
       "name": "Marker",
       "category": "doc-parse",
@@ -891,6 +1179,34 @@
       "featured": true,
       "stars": 82714,
       "lastPush": "2026-10-28"
+    },
+    {
+      "id": "dltech21--ofd-js",
+      "name": "ofd.js",
+      "category": "doc-parse",
+      "kind": "library",
+      "repo": "DLTech21/ofd.js",
+      "homepage": null,
+      "url": "https://github.com/DLTech21/ofd.js",
+      "license": "Apache-2.0",
+      "language": "JavaScript",
+      "platform": [
+        "web"
+      ],
+      "description": "在浏览器里渲染 OFD 版式文件的 JS 组件，投标文件、电子发票的在线预览用得着。",
+      "tags": [
+        "OFD",
+        "版式文件",
+        "在线预览"
+      ],
+      "use_cases": [
+        "投标文件的 OFD 格式在网页里直接打开",
+        "给电子发票、中标通知书做个在线阅读器"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 344,
+      "lastPush": "2024-08-13"
     },
     {
       "id": "paddlepaddle--paddleocr",
@@ -1013,6 +1329,34 @@
       "lastPush": "2026-10-28"
     },
     {
+      "id": "kaifangqian--kaifangqian-base",
+      "name": "开放签",
+      "category": "esign-crypto",
+      "kind": "app",
+      "repo": "kaifangqian/kaifangqian-base",
+      "homepage": null,
+      "url": "https://github.com/kaifangqian/kaifangqian-base",
+      "license": "AGPL-3.0",
+      "language": "Vue",
+      "platform": [
+        "web"
+      ],
+      "description": "开源电子签章前端：手写签名面板、印章生成、按关键字定位签署位置，能直接搭自己的签章系统。",
+      "tags": [
+        "电子签章",
+        "手写签名",
+        "印章"
+      ],
+      "use_cases": [
+        "给投标文件加骑缝章与签署位",
+        "自建电子合同签署页，替代第三方 SaaS"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 523,
+      "lastPush": "2026-03-26"
+    },
+    {
       "id": "guanzhi--gmssl",
       "name": "GmSSL",
       "category": "esign-crypto",
@@ -1042,6 +1386,35 @@
       "featured": true,
       "stars": 6176,
       "lastPush": "2026-06-30"
+    },
+    {
+      "id": "freeleepm--mini-contract",
+      "name": "Mini Contract",
+      "category": "esign-crypto",
+      "kind": "service",
+      "repo": "freeleepm/mini-contract",
+      "homepage": "https://s.leepm.com",
+      "url": "https://s.leepm.com",
+      "license": "unknown",
+      "language": "JavaScript",
+      "platform": [
+        "server",
+        "web"
+      ],
+      "description": "可私有化部署的电子合同平台，一套代码同时对接腾讯电子签、法大大、君子签等多家签章服务。",
+      "tags": [
+        "电子合同",
+        "电子签章",
+        "私有化部署"
+      ],
+      "use_cases": [
+        "一套接口兼容多家 CA 与签章服务",
+        "合同签署流程私有化部署，数据不出内网"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 325,
+      "lastPush": "2026-10-11"
     },
     {
       "id": "trisia--ofdrw",
@@ -1161,6 +1534,34 @@
       "lastPush": "2026-10-29"
     },
     {
+      "id": "buildingsmart--certification-datasets",
+      "name": "buildingSMART 认证样例数据",
+      "category": "learning",
+      "kind": "dataset",
+      "repo": "buildingSMART/Certification-datasets",
+      "homepage": null,
+      "url": "https://github.com/buildingSMART/Certification-datasets",
+      "license": "NOASSERTION",
+      "language": null,
+      "platform": [
+        "web"
+      ],
+      "description": "buildingSMART 官方 IFC 认证样例：各版本 schema、各格式的真实模型，测解析器就拿它当基准。",
+      "tags": [
+        "IFC",
+        "测试数据",
+        "认证"
+      ],
+      "use_cases": [
+        "验证自研 IFC 解析器能否读全各版本",
+        "做 BIM 软件互操作性测试的对照样本"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 363,
+      "lastPush": "2026-09-04"
+    },
+    {
       "id": "ifc-standard",
       "name": "IFC 标准（ISO 16739）",
       "category": "learning",
@@ -1213,6 +1614,35 @@
       "featured": false,
       "stars": null,
       "lastPush": null
+    },
+    {
+      "id": "flyfish-dev--file-viewer",
+      "name": "flyfish file-viewer",
+      "category": "office-toolkit",
+      "kind": "library",
+      "repo": "flyfish-dev/file-viewer",
+      "homepage": "https://file-viewer.app",
+      "url": "https://file-viewer.app",
+      "license": "Apache-2.0",
+      "language": "TypeScript",
+      "platform": [
+        "web"
+      ],
+      "description": "纯前端预览 275+ 种文件：Office、PDF、OFD、CAD、3D、压缩包，不需要服务端转换。",
+      "tags": [
+        "文件预览",
+        "OFD",
+        "CAD",
+        "前端组件"
+      ],
+      "use_cases": [
+        "系统里嵌附件预览，不走后端转码",
+        "投标文件（PDF/OFD/Office）统一在线打开"
+      ],
+      "archived": false,
+      "featured": false,
+      "stars": 2656,
+      "lastPush": "2026-10-29"
     },
     {
       "id": "ocrmypdf--ocrmypdf",

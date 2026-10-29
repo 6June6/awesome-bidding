@@ -1,0 +1,16 @@
+name: web-ifc
+category: bim-cad
+kind: library
+repo: ThatOpen/engine_web-ifc
+homepage: https://thatopen.github.io/engine_web-ifc/demo
+license: MPL-2.0
+language: TypeScript
+platform: [web, server]
+description: 用 JavaScript 读写 IFC 的底层内核，速度接近原生；已收录的 That Open Engine 加载 IFC 就靠它。
+tags: [IFC, BIM, WebAssembly]
+use_cases:
+  - 网页里加载 IFC 模型并读取构件属性
+  - 服务端批量解析 IFC 生成工程量数据
+order: 60
+added: 2026-10-29
+added_by: seed

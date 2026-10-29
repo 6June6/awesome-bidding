@@ -388,6 +388,141 @@
       "language": "JavaScript",
       "pushedAt": "2026-10-16",
       "homepage": null
+    },
+    "buildingSMART/Certification-datasets": {
+      "stars": 363,
+      "forks": 134,
+      "license": "NOASSERTION",
+      "archived": false,
+      "language": null,
+      "pushedAt": "2026-09-04",
+      "homepage": null
+    },
+    "datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction": {
+      "stars": 375,
+      "forks": 93,
+      "license": "MIT",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-10-19",
+      "homepage": "https://datadrivenconstruction.io/"
+    },
+    "datadrivenconstruction/OpenConstructionERP": {
+      "stars": 1066,
+      "forks": 332,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "language": "TypeScript",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://openconstructionerp.com"
+    },
+    "DLTech21/ofd.js": {
+      "stars": 344,
+      "forks": 195,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "JavaScript",
+      "pushedAt": "2024-08-13",
+      "homepage": null
+    },
+    "evolsb/claude-legal-skill": {
+      "stars": 487,
+      "forks": 63,
+      "license": "MIT",
+      "archived": false,
+      "language": null,
+      "pushedAt": "2026-07-23",
+      "homepage": "https://ctsheehan.com"
+    },
+    "FB208/OpenBidKit_Yibiao": {
+      "stars": 3239,
+      "forks": 829,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "language": "JavaScript",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://yibiao.pro"
+    },
+    "fighting41love/funNLP": {
+      "stars": 84240,
+      "forks": 15300,
+      "license": null,
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2024-05-10",
+      "homepage": "https://zhuanlan.zhihu.com/yangyangfuture"
+    },
+    "flyfish-dev/file-viewer": {
+      "stars": 2656,
+      "forks": 274,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "TypeScript",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://file-viewer.app"
+    },
+    "freeleepm/mini-contract": {
+      "stars": 325,
+      "forks": 97,
+      "license": null,
+      "archived": false,
+      "language": "JavaScript",
+      "pushedAt": "2026-10-11",
+      "homepage": "https://s.leepm.com"
+    },
+    "kaifangqian/kaifangqian-base": {
+      "stars": 523,
+      "forks": 153,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "language": "Vue",
+      "pushedAt": "2026-03-26",
+      "homepage": null
+    },
+    "mlightcad/cad-viewer": {
+      "stars": 1212,
+      "forks": 251,
+      "license": "MIT",
+      "archived": false,
+      "language": "TypeScript",
+      "pushedAt": "2026-10-28",
+      "homepage": "https://mlightcad.com/cad-viewer/"
+    },
+    "mlt131220/Astral3D": {
+      "stars": 2504,
+      "forks": 497,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "JavaScript",
+      "pushedAt": "2026-10-26",
+      "homepage": "https://3d.astraljs.com"
+    },
+    "renoyuan/easyofd": {
+      "stars": 439,
+      "forks": 68,
+      "license": "Apache-2.0",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-06-11",
+      "homepage": null
+    },
+    "ThatOpen/engine_web-ifc": {
+      "stars": 1079,
+      "forks": 291,
+      "license": "MPL-2.0",
+      "archived": false,
+      "language": "TypeScript",
+      "pushedAt": "2026-10-29",
+      "homepage": "https://thatopen.github.io/engine_web-ifc/demo"
+    },
+    "xavctn/img2table": {
+      "stars": 901,
+      "forks": 120,
+      "license": "MIT",
+      "archived": false,
+      "language": "Python",
+      "pushedAt": "2026-07-12",
+      "homepage": null
     }
   }
 }

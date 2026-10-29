@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
- * 导出成 nav-site 的站点数据格式，方便把开源工具补进导航站的「工具软件」分类。
+ * 把软件类条目导出成「站点条目」格式，方便拿去做导航页、小程序或浏览器扩展的数据源。
  *
- * 为什么需要人工过一遍：导航站收的是「浏览器里点开就能用的站点」，而这里很多是
- * 需要本地安装的桌面软件或命令行工具。脚本只做格式转换，不做「适不适合上导航站」的判断。
+ * 为什么需要人工过一遍：导航类产品收的是「浏览器里点开就能用的站点」，而这里很多是
+ * 需要本地安装的桌面软件或命令行工具。脚本只做格式转换，不做「适不适合当站点」的判断。
  */
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -42,23 +42,24 @@ async function main() {
 
   const payload = {
     _comment:
-      '由 awesome-bidding 的 npm run export:navsite 生成。仅供人工挑选后并入 nav-site 的 scripts/data/nav-sites.json，不要直接覆盖。',
+      '由 awesome-bidding 的 npm run export:webapps 生成。这是通用「站点条目」格式，不是任何具体产品的私有格式；合并进你自己的数据前请人工过一遍。',
     generatedAt: new Date().toISOString(),
     source: 'awesome-bidding',
+    contentLicense: 'CC0-1.0',
     categories: [{ slug: 'tools', name: '工具软件', sortOrder: 70 }],
     sites,
   };
 
   await mkdir(DIST_DIR, { recursive: true });
-  const file = path.join(DIST_DIR, 'nav-sites-export.json');
+  const file = path.join(DIST_DIR, 'webapps.json');
   await writeFile(file, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
 
-  ok(`已导出 ${sites.length} 个软件类条目 → dist/nav-sites-export.json`);
-  info(`另有 ${skipped} 个库/数据集/规范类条目不导出（导航站收录的是能直接打开的站点）。`);
+  ok(`已导出 ${sites.length} 个软件类条目 → dist/webapps.json`);
+  info(`另有 ${skipped} 个库/数据集/规范类条目不导出（站点形态收的是能直接打开的页面）。`);
   console.log('');
   console.log(dim('  合并前请人工确认：'));
   console.log(dim('  1. 是否真的能在浏览器里直接用（桌面软件要挑官网下载页）'));
-  console.log(dim('  2. URL 是否与 nav-site 已有条目重复（nav-site 按 url_norm 判重）'));
+  console.log(dim('  2. URL 是否与你已有条目重复（按去掉协议与 www 的规范化地址判重）'));
 }
 
 main().catch((err) => {

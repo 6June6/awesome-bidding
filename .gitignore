@@ -1,8 +1,8 @@
 node_modules/
 .pnpm-store/
 
-# 导出给 nav-site 的中间产物，按需生成，不进版本库
-dist/nav-sites-export.json
+# 站点条目导出产物，按需生成，不进版本库
+dist/webapps.json
 
 .DS_Store
 *.log

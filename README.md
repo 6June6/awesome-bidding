@@ -27,8 +27,6 @@
 | **做 AI 应用** | [数据、AI 与检索](docs/list/data-ai.md) · [合规审查](docs/list/compliance.md) |
 | **想找替代方案** | [BIM / CAD](docs/list/bim-cad.md) · [项目管理](docs/list/project-mgmt.md) · [GIS](docs/list/geo-space.md) |
 
-配套项目：**[招投标工程导航 nav-site](https://github.com/6June6/nav-site)** —— 收录真实的交易平台、监管机构与行业站点。导航站解决「去哪办事」，本仓库解决「用什么工具」。两边数据可互相导出，见 [与导航站的配合](#与导航站的配合)。
-
 ---
 
 ## 目录
@@ -298,17 +296,19 @@ npm run validate && npm run build
 ```
 
 - 想做自己的导航页、小程序、扩展？直接取这个 JSON。
-- 想批量筛选？`npm run export:navsite` 可导出成 nav-site 的站点格式。
+- 想要现成的「站点条目」结构？`npm run export:webapps` 会把软件类条目转成通用站点格式。
 
-### 与导航站的配合
+### 导出成站点数据
 
-本仓库的软件类条目（`kind: app / service / cli`）可以导出成 [nav-site](https://github.com/6June6/nav-site) 的「工具软件」分类数据：
+如果你的场景是导航页、小程序或浏览器扩展，需要的是「一条一条可以点开的站点」，那么：
 
 ```bash
-npm run export:navsite   # 产出 dist/nav-sites-export.json
+npm run export:webapps   # 产出 dist/webapps.json
 ```
 
-导出结果需要人工过一遍再合并——开源软件和「能在浏览器里直接用的站点」不是一回事，脚本不做主观判断。
+只导出 `kind: app / service / cli` 这类有可直接访问地址的条目，每条含 `name / url / desc / alias`，不属于任何产品的私有格式。
+
+导出结果需要人工过一遍——开源软件和「能在浏览器里直接打开的站点」不是一回事，脚本不做主观判断。这个仓库不绑定、也不承诺适配任何特定产品。
 
 ---
 
@@ -338,7 +338,7 @@ dist/index.json         机读全量数据（自动生成）
 | `npm run new` | 交互式新建条目 |
 | `npm run enrich` | 拉 GitHub 元数据（star / 许可 / 归档状态） |
 | `npm run link-check` | 链接巡检，区分「真死链」与「被 WAF 拦」 |
-| `npm run export:navsite` | 导出给导航站用的站点数据 |
+| `npm run export:webapps` | 导出成通用站点条目数据（导航页 / 小程序 / 扩展可用） |
 | `npm test` | 脚本自身的单元测试 |
 
 ---

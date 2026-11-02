@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-29T06:22:11.610Z",
+  "checkedAt": "2026-11-02T10:30:25.120Z",
   "summary": {
-    "ok": 43,
-    "blocked": 2,
+    "ok": 59,
+    "blocked": 1,
     "dead": 0,
     "unknown": 0
   },
@@ -31,6 +31,12 @@
       "httpStatus": 200,
       "error": null
     },
+    "buildingsmart--certification-datasets": {
+      "url": "https://github.com/buildingSMART/Certification-datasets",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
     "camelot-dev--camelot": {
       "url": "https://camelot-py.readthedocs.io/",
       "status": "ok",
@@ -39,6 +45,24 @@
     },
     "cesiumgs--cesium": {
       "url": "https://cesium.com/platform/cesiumjs/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "datadrivenconstruction--ddc-skills-for-ai-agents-in-construction": {
+      "url": "https://datadrivenconstruction.io/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "datadrivenconstruction--openconstructionerp": {
+      "url": "https://openconstructionerp.com",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "dltech21--ofd-js": {
+      "url": "https://github.com/DLTech21/ofd.js",
       "status": "ok",
       "httpStatus": 200,
       "error": null
@@ -61,8 +85,38 @@
       "httpStatus": 200,
       "error": null
     },
+    "evolsb--claude-legal-skill": {
+      "url": "https://github.com/evolsb/claude-legal-skill",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "fb208--openbidkit-yibiao": {
+      "url": "https://yibiao.pro",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "fighting41love--funnlp": {
+      "url": "https://zhuanlan.zhihu.com/yangyangfuture",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "flyfish-dev--file-viewer": {
+      "url": "https://file-viewer.app",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
     "freecad--freecad": {
       "url": "https://www.freecad.org/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "freeleepm--mini-contract": {
+      "url": "https://s.leepm.com",
       "status": "ok",
       "httpStatus": 200,
       "error": null
@@ -109,6 +163,12 @@
       "httpStatus": 200,
       "error": null
     },
+    "kaifangqian--kaifangqian-base": {
+      "url": "https://github.com/kaifangqian/kaifangqian-base",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
     "langgenius--dify": {
       "url": "https://dify.ai/",
       "status": "ok",
@@ -123,6 +183,18 @@
     },
     "microsoft--playwright": {
       "url": "https://playwright.dev/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "mlightcad--cad-viewer": {
+      "url": "https://mlightcad.com/cad-viewer/",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "mlt131220--astral3d": {
+      "url": "https://3d.astraljs.com",
       "status": "ok",
       "httpStatus": 200,
       "error": null
@@ -201,8 +273,8 @@
     },
     "plutext--docx4j": {
       "url": "https://www.docx4java.org/",
-      "status": "blocked",
-      "httpStatus": 403,
+      "status": "ok",
+      "httpStatus": 200,
       "error": null
     },
     "pymupdf--pymupdf": {
@@ -235,6 +307,12 @@
       "httpStatus": 200,
       "error": null
     },
+    "renoyuan--easyofd": {
+      "url": "https://github.com/renoyuan/easyofd",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
     "run-llama--llama-index": {
       "url": "https://docs.llamaindex.ai/",
       "status": "ok",
@@ -259,6 +337,12 @@
       "httpStatus": 200,
       "error": null
     },
+    "thatopen--engine-web-ifc": {
+      "url": "https://thatopen.github.io/engine_web-ifc/demo",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
     "thatopen--engine": {
       "url": "https://thatopen.com/",
       "status": "ok",
@@ -273,6 +357,12 @@
     },
     "vikparuchuri--marker": {
       "url": "https://github.com/VikParuchuri/marker",
+      "status": "ok",
+      "httpStatus": 200,
+      "error": null
+    },
+    "xavctn--img2table": {
+      "url": "https://github.com/xavctn/img2table",
       "status": "ok",
       "httpStatus": 200,
       "error": null
